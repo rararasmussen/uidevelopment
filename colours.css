@@ -1,0 +1,10 @@
+:root {
+    --white: #FCFAF7;
+    --black: #0C0738;
+    --primary-blue: #3511A3;
+    --accent-orange: #FF6026;
+    --blue-orange-gradient: linear-gradient(#4D1FDA, #F55D1C);
+    --primary-blue-gradient: linear-gradient(rgba(53, 17, 163, 100), rgba(53, 17, 163, 60));
+    --inactive-dark-gray: #848189;
+    --background-light-gray: #EFECF2;
+  }
