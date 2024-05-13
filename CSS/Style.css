@@ -1,0 +1,5 @@
+@import url(colours.css);
+
+.Nav-bar {
+    color: var(--primary-blue-gradient)
+}
