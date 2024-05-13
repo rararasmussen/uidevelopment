@@ -1,5 +1,91 @@
 @import url(colours.css);
 
-.Nav-bar {
-    color: var(--primary-blue-gradient)
+/* Adding background colour to Top navigation*/
+.Top-Nav {
+    padding: 20px;
+    height: 166px;
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.Top-Nav .Logo {
+    justify-self: left;
+}
+
+
+
+
+/* This is for overlaying the Nav-Bar over the Top-Nav */
+.Nav-Wrapper {
+    display: grid;
+}
+.Top-Nav {
+    position: relative;
+}
+
+.Nav-Bar {
+    justify-self: center;
+    
+}
+
+
+/* Nav-Bar Section */
+.Nav-Bar {
+    width: 1204px;
+    height: 75px;
+    background-color: var(--background-light-gray);
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+/* Main Banner */
+.Main-Banner {
+    background-color: var(--primary-blue);
+    border-radius: 20px;
+}
+
+/* Styling for the Popular Brands Section in Main Banner */
+.Popular-Brands {
+    height: 85px;
+    width: 1100px;
+    background-color: var(--background-light-gray);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.Games-Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.Console-card {
+    width: 326px;
+    height: 342px;
+    background-color: var(--background-light-gray);
+    margin: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    
+
 }
