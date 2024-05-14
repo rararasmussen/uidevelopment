@@ -4,6 +4,7 @@
 .Top-Nav {
     padding: 20px;
     height: 166px;
+    width: 100%;
     background-color: var(--primary-blue);
     color: white;
     border-radius: 0 0 20px 20px;
@@ -12,54 +13,42 @@
     justify-content: space-between;
 }
 
-.Top-Nav .Logo {
-    justify-self: left;
-}
 
 
-
-
-/* This is for overlaying the Nav-Bar over the Top-Nav */
-.Nav-Wrapper {
-    display: grid;
-}
-.Top-Nav {
-    position: relative;
-}
-
-.Nav-Bar {
-    justify-self: center;
-    
-}
 
 
 /* Nav-Bar Section */
-.Nav-Bar {
-    width: 1204px;
+.Nav-Bar ul {
+    width: 100%;
     height: 75px;
     background-color: var(--background-light-gray);
     border-radius: 20px;
-
-    text-decoration: none;
-
     padding: 20px;
 
+    list-style-type: none;
+    text-decoration: none;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     
+}
+
+.Nav-Button {
+    text-decoration: none;
 }
 
 /* Main Banner */
 .Main-Banner {
     background-color: var(--primary-blue);
     border-radius: 20px;
+    width: 100%;
 }
 
 /* Styling for the Popular Brands Section in Main Banner */
 .Popular-Brands {
     height: 85px;
-    width: 1100px;
+    width:100%;
     background-color: var(--background-light-gray);
     border-radius: 20px;
 
@@ -73,19 +62,21 @@
 
 .Games-Grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 340px;
+    gap: 20px;
     
 }
 
 .Console-card {
-    width: 326px;
-    height: 342px;
+    grid-column: span 2;
     background-color: var(--background-light-gray);
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
 
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     
 
 }
