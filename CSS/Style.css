@@ -18,9 +18,23 @@
 
 
 /* Nav-Bar Section */
-.Nav-Bar ul {
+.Nav-Container {
+    display: grid;
     width: 100%;
-    height: 75px;
+    height: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 4vh);
+}
+
+.Nav-Bar {
+    grid-column-start: ;
+    grid-row-start: 3;
+
+}
+
+.Nav-Bar ul {
+    height: 3vh;
+    width: 95vw;
     background-color: var(--background-light-gray);
     border-radius: 20px;
     padding: 20px;
