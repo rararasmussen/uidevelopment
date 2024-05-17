@@ -1,5 +1,16 @@
 @import url(colours.css);
 
+/* Removing any defauly margins in browser */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the minimum viewport height */
+body {
+    min-height: 100vh;
+}
+
 /* Adding background colour to Top navigation*/
 .Top-Nav {
     padding: 20px;
@@ -13,6 +24,11 @@
     justify-content: space-between;
 }
 
+.Nav-Items a {
+    height: 100%;
+    padding: 1rem;
+    align-items: flex-end;
+}
 
 
 
@@ -24,12 +40,13 @@
     height: 10%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 4vh);
+    
 }
 
 .Nav-Bar {
     grid-column-start: ;
     grid-row-start: 3;
-
+    align-items: ;
 }
 
 .Nav-Bar ul {
@@ -45,7 +62,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+}
+
+.Nav-Bar a {
+    height: 100%;
 }
 
 .Nav-Button {
