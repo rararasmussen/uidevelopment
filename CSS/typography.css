@@ -1,1 +1,67 @@
-/*import google fonts since that's what we're using*/
+@import url(colours.css);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);
+@import url(https://fonts.googleapis.com/css?family=Akshar);
+
+:root {
+    --font-header: 'Akshar', sans-serif;
+    --font-body: 'IBM Plex Sans', serif;
+    --line-height-base: 1.6;
+    --line-height-heading: 1.2;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    color: var(--black);
+    line-height: var(--line-height-heading);
+    margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: var(--line-height-base);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Links */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+.Nav-Button {
+    font-family: var(--font-header);
+    color: var(--black);
+    line-height: var(--line-height-heading);
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
