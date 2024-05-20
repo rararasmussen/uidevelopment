@@ -58,7 +58,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-.Nav-Button {
+.nav-button {
     font-family: var(--font-header);
     color: var(--black);
     line-height: var(--line-height-heading);
