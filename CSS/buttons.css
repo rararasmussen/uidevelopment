@@ -1,7 +1,39 @@
 @import url(colours.css);
 @import url(typography.css);
-button .primary {
+
+button {
+    font: font-body;
+    font-size: 16px;
     border-radius: 10px;
-    background: var(--primary-blue, #3511A3);
     padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+}
+
+button.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+button.btn-secondary {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+button.btn-important {
+    background-color: var(--blue-orange-gradient);
+    color: var(--white);
+}
+
+button.btn-inactive {
+    background-color: var(--inactive-dark-gray);
+    color: var(--white);
+}
+
+.main-banner button {
+    font-size: 20px;
+    padding: 18px 22px;
+    margin-left: 48px;
 }
