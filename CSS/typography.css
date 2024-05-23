@@ -13,16 +13,12 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header);
     line-height: var(--line-height-heading);
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: 200;
-}
-
-body h1 {
-    margin-left: 16px;
 }
 
 .main-banner h1 {
@@ -60,14 +56,23 @@ p {
     margin: 0 0 1.5rem 0;
 }
 
+p.text-breadcrumbs {
+    color: var(--primary-blue);
+}
+
+p.text-breadcrumbs:hover {
+    text-decoration: underline;
+}
+
 /* Links */
 a {
-    color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--primary-blue);
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: var(--primary-blue);
     text-decoration: underline;
 }
 
@@ -77,4 +82,18 @@ a:hover, a:focus {
     line-height: var(--line-height-heading);
     margin: 0 0 1rem 0;
     font-size: 2rem;
+}
+
+/* Styling breadcrumbs text */
+.breadcrumbs {
+    color: var(--primary-blue);
+    display: inline;
+}
+
+a.breadcrumbs {
+    text-decoration: underline;
+}
+
+a.breadcrumbs:hover {
+    color: var(--accent-orange);
 }
