@@ -111,8 +111,6 @@ main {
     margin-bottom: 24px;
 }
 
-
-
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -178,13 +176,18 @@ footer .container {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 240px;
-    grid-gap: 20px;
+    grid-auto-rows: auto;
+    grid-gap: 48px;
 }
 
 .product {
-    background-color: var(--background-light-gray);
-    padding: 16px;
+    /* background-color: var(--background-light-gray); */
     border-radius: 10px;
     text-align: left;
+    padding: 8px;
+}
+
+.product > img {
+    max-width: 100%;
+    height: auto;
 }
