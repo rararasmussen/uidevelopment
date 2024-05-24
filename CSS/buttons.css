@@ -13,23 +13,28 @@ button {
 }
 
 button.btn-primary {
-    background-color: var(--primary-blue);
+    background: var(--primary-blue);
     color: var(--white);
 }
 
-button.btn-secondary {
-    background-color: var(--white);
+button.btn-light {
+    background: var(--white-gradient);
     color: var(--black);
 }
 
 button.btn-important {
-    background-color: var(--blue-orange-gradient);
+    background: var(--blue-orange-gradient);
     color: var(--white);
 }
 
 button.btn-inactive {
-    background-color: var(--inactive-dark-gray);
+    background: var(--inactive-dark-gray);
     color: var(--white);
+}
+
+button:hover {
+    transform:scale(1.05);
+    box-shadow:0px 4px 4px rgba(53, 17, 163, 0.2);
 }
 
 .main-banner button {

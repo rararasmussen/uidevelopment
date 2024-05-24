@@ -25,13 +25,14 @@ main {
     padding: 20px;
     height: 10vh;
     width: auto;
-    background-color: var(--primary-blue);
+    background: var(--primary-blue-gradient);
     color: white;
     border-radius: 0 0 20px 20px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow:0px 10px 10px 0px rgba(12, 7, 56, 0.2);
 }
 
 .nav-items a {
@@ -55,7 +56,8 @@ main {
     display: flex;
     justify-content: center;
     grid-row-start: 3;
-    
+    backdrop-filter: blur(10px); 
+    /* TODO get background blur working */
 }
 
 .nav-bar ul {
@@ -71,6 +73,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow:0px 10px 10px 0px rgba(12, 7, 56, 0.2);
 }
 
 .nav-bar a {
@@ -138,6 +141,12 @@ main {
     justify-content: center;
 }
 
+.console-card:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    box-shadow:0px 4px 4px 0px rgba(12, 7, 56, 0.2);
+}
+
 .console-card img {
     width: 100%;
     height: 100%; 
@@ -194,12 +203,15 @@ footer .container {
     padding: 8px;
 }
 
+.product:hover {
+    transform: scale(1.05);
+    text-decoration:underline;
+}
+
 .product > img {
     max-width: 100%;
     height: auto;
 }
-
-
 
 /* Section for Product Page */
 .indiv-product-container {
