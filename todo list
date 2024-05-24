@@ -2,3 +2,33 @@
 - look at just using an image for the main banner on home page? vs using tile + image, what are the benefits
 - work out nav & make nav-related class names more clear
 - change console card images
+
+functionality:
+- adding and removing from shopping cart must work
+- incrementing & adding correct # of items to cart must work
+- typing in search works - but can just have a fixed result page
+- filters don't need to work
+- drop downs should work - need to be able to see options and select
+- forms should validate, but can just have a random fixed response
+- checkout total can be fixed
+- little terms and conditions check box can work
+- all product tiles should link somewhere, so just to the two ones we picked
+- details, shipping, FAQ should work & drop down
+- nav bar drop down should work
+- add a little notification dot to cart when there's something in it
+
+
+Tom:
+- Explore games grid section (felx-grow)
+- Shopping cart layout html and css
+- Checkout layout 
+- Discount code to the "express checkout"
+- Report template from A2 New Figma File
+- Details, Shipping, FAQ understand how the HTML and JS works 
+
+Annika:
+- finish filling in content in home page
+- finish xbox page
+- Product List grey-box for each product 
+- see if i can work out gradients & drop shadows
+- do search button
