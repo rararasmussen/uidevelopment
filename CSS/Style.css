@@ -216,12 +216,17 @@ footer .container {
 
     
     display: flex;
-    justify-self: center;
+    justify-self;
 
     background-color: var(--background-light-gray);
     margin: 10px;
     border-radius: 20px;
     
+}
+
+.product-photos {
+    display: flex;
+    justify-self: center;
 }
 
 .product-info {
