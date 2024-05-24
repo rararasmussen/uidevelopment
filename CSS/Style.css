@@ -101,6 +101,7 @@ main {
     text-align: left;
     color: var(--white);
     padding-left: 2em;
+    /* position: fixed; */
 
     
 }
