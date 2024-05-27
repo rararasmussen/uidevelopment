@@ -19,7 +19,8 @@ functionality:
 
 
 Tom:
-- Explore games grid section (felx-grow)
+- Explore games grid section (felx-grow) [done, no need for flexgrow, was just 140px instead of 160px]
+- Main Banner (Product Card) placement [done, used grid system]
 - Shopping cart layout html and css
 - Checkout layout 
 - Discount code to the "express checkout"
