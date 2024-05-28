@@ -201,11 +201,17 @@ footer .container {
 }
 
 .product {
-    /* background-color: var(--background-light-gray); */
-    border-radius: 10px;
     text-align: left;
     padding: 8px;
 }
+
+.product img {
+    border-radius: 10px;
+    
+}
+
+
+
 
 .product:hover {
     transform: scale(1.05);
@@ -244,6 +250,7 @@ footer .container {
 
 .image-container img{
     width: 40vw;
+    padding: 60px;
 }
 
 .product-info {
@@ -251,7 +258,59 @@ footer .container {
     margin: 10px;
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
 }
+
+.product-info h3, p{
+    width: 100%;
+    display: flex;
+}
+
+
+.add-to-cart {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--primary-blue);
+    height: 60px;
+    min-width: 100px;
+    width: 150px; 
+    padding: 4px 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-to-cart img{
+    height: 15px;
+}
+
+.increment-wrapper {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--primary-blue);
+    height: 50px;
+    min-width: 100px;
+    width: 130px;
+    padding: 4px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0
+}
+
+.increment-wrapper span {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 
 .detail-ship-faq {
     background-color: var(--background-light-gray);
@@ -259,3 +318,4 @@ footer .container {
     border-radius: 20px;
     padding: 20px;
 }
+

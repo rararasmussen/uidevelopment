@@ -96,3 +96,9 @@ a.breadcrumbs {
 a.breadcrumbs:hover {
     color: var(--accent-orange);
 }
+
+.increment-wrapper {
+    font-family: var(--font-body);
+    font-size: 1.5em;
+    color: var(--primary-blue)
+}

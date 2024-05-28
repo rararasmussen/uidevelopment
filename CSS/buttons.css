@@ -42,3 +42,8 @@ button:hover {
     padding: 18px 22px;
     margin-left: 48px;
 }
+
+button.add-to-cart {
+    background: var(--primary-blue);
+    color: var(--white);
+}
