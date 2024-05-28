@@ -230,6 +230,7 @@ footer .container {
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
+    height: 70dvh;
 }
 
 .image-container {
@@ -249,7 +250,7 @@ footer .container {
 }
 
 .image-container img{
-    width: 40vw;
+    width:fit-content;
     padding: 60px;
 }
 
