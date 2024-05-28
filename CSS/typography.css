@@ -102,3 +102,9 @@ a.breadcrumbs:hover {
     font-size: 1.5em;
     color: var(--primary-blue)
 }
+
+.increment-wrapper-cart {
+    font-family: var(--font-body);
+    font-size: 1em;
+    color: var(--primary-blue)
+}

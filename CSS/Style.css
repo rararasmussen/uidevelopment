@@ -236,12 +236,10 @@ footer .container {
 .image-container {
     grid-row: span 2;
     grid-column: 1;
-
     
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit:;
 
     background-color: var(--background-light-gray);
     margin: 10px;
@@ -320,3 +318,66 @@ footer .container {
     padding: 20px;
 }
 
+/* This is the section for the shopping cart */
+.cart-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    /* height: 70dvh; */
+}
+
+.shopping-cart {
+    grid-row: span 3;
+    grid-column: 1;
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */ 
+    /* align-items: flex-start; */
+    /* flex-wrap: nowrap; */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.cart-image img {
+    height: 110px;
+    padding: 10px;
+    
+}
+
+.cart-image {
+    background-color: var(--background-light-gray);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.increment-wrapper-cart {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--primary-blue);
+    height: 30px;
+    min-width: 40px;
+    width: 60px;
+    padding: 4px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0
+}
+
+/* for the horizontal line breaks in the shopping cart */
+hr {
+    background-color: var(--primary-blue);
+    margin: 5px;
+    border: none;
+    height: 1px;
+}
