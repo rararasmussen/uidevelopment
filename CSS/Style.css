@@ -177,6 +177,9 @@ footer {
     align-items: center;
     gap: 24px;
     margin-top: 24px;
+    border-color: var(--inactive-dark-gray); /* unsure about border */
+    border-style: solid;
+    border-width: 1px;;
 }
 
 footer .socials-container {
@@ -319,12 +322,18 @@ footer .container {
 }
 
 /* This is the section for the shopping cart */
+.cart-background {
+    background: var(--background-light-gray);
+}
+
 .cart-container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1; 
 }
 
 .shopping-cart {
@@ -335,7 +344,7 @@ footer .container {
     flex-direction: column;
     
     border-radius: 20px;
-    background-color: antiquewhite; /* trying to figure out how to invert the background colours */ 
+    background-color: var(--white); 
     padding: 20px;
 }
 
@@ -379,5 +388,20 @@ hr {
     background-color: var(--primary-blue);
     margin: 5px;
     border: none;
-    height: 1px;
+    height: 1.5px;
+}
+
+.calc-shipping, .coupon-code, .total{
+    border-radius: 20px;
+    background-color: var(--white); 
+    padding: 20px;
+}
+
+.coupon-code-container input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    
 }

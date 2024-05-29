@@ -12,9 +12,15 @@ button {
     border: 0;
 }
 
-button.btn-primary {
+button.btn-primary, .add-to-cart {
     background: var(--primary-blue);
     color: var(--white);
+}
+
+button.btn-cart {
+    background: var(--primary-blue);
+    color: var(--white);
+    width: 100%;
 }
 
 button.btn-light {
@@ -25,6 +31,7 @@ button.btn-light {
 button.btn-important {
     background: var(--blue-orange-gradient);
     color: var(--white);
+    width: 100%;
 }
 
 button.btn-inactive {
@@ -43,7 +50,4 @@ button:hover {
     margin-left: 48px;
 }
 
-button.add-to-cart {
-    background: var(--primary-blue);
-    color: var(--white);
-}
+

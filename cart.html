@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="CSS/buttons.css">
     
 </head>
-<body>
-       <!--Navigation Section-->
-       <header>
+<body class="cart-background">
+    <!--Navigation Section-->
+    <header>
         <div class="nav-container"> 
             
             <nav class="top-nav">
@@ -62,7 +62,24 @@
                         <div class="cart-image">
                             <img src="Components/product-photos/Halo-2.png">
                         </div>
-                       
+                        <div class="details+price">
+                            <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
+                            <h4>$59.90</h4>
+                        </div>
+
+                        <div class="increment-wrapper-cart">
+                            <span class="minus">-</span>
+                            <span class="number">1</span>
+                            <span class="plus">+</span>
+                        </div>
+
+                        <button class="remove">Remove</button>
+                    </article>
+                    <hr size="5">
+                    <article class="cart-item">
+                        <div class="cart-image">
+                            <img src="Components/product-photos/Halo-2.png">
+                        </div>
                         <div class="details+price">
                             <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
                             <h4>$59.90</h4>
@@ -82,18 +99,22 @@
 
                 <aside class="calc-shipping">
                     <h5>Calculate Shipping Options</h5>
+                    <button class="btn-cart">Calcualte</button>
                 </aside>
 
                 <aside class="coupon-code">
                     <h5>Coupon Code</h5>
+                    <div class="coupon-code-container">
+                        <input type="text" class="btn-inactive" placeholder="Enter Coupon Code">
+                    </div>
+                    <button class="btn-cart">Apply Code</button>
                 </aside>
 
                 <aside class="total">
                     <h5>Total: $104.6</h5>
+                    <button class="btn-important">Checkout</button>
                 </aside>
             </div>
-           
-     
         </main>
     
         <!-- Footer -->
