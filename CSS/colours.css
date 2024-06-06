@@ -4,9 +4,10 @@
     --primary-blue: #3511A3;
     --accent-orange: #FF6026;
     --blue-orange-gradient: linear-gradient(#4D1FDA, #F55D1C);
-    --primary-blue-gradient: linear-gradient(rgba(53, 17, 163, 1), rgba(53, 17, 163, .6));
+    --primary-blue-gradient: linear-gradient(rgba(53, 17, 163, 1), rgba(53, 17, 163, .7));
     --orange-gradient: linear-gradient(--accent-orange, #9C0000);
     --inactive-dark-gray: #848189;
     --background-light-gray: #EFECF2;
+    --medium-gray: #C7C1CF;
     --white-gradient: linear-gradient(rgba(251, 250, 248, 1), rgba(251, 250, 248, .6));
   }

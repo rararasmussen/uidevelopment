@@ -12,14 +12,11 @@ button {
     align-items: center;
     text-align: center;
     border: 0;
-    height: 48px;
 }
 
 button.btn-primary {
     background: var(--primary-blue);
     color: var(--white);
-    display: flex;
-    justify-content: space-between;
     display: flex;
     justify-content: space-between;
 }
@@ -33,6 +30,17 @@ button.btn-important {
     background: var(--blue-orange-gradient);
     color: var(--white);
     width: 100%;
+}
+
+button.btn-text {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    background-color: transparent;
+}
+button.btn-text:hover {
+    transform:scale(1);
+    box-shadow:0px 0px 0px rgba(53, 17, 163, 0.2);
+    color: var(--accent-orange);
 }
 
 button.btn-inactive {
@@ -57,10 +65,9 @@ button img{
 }
 
 /* remove this? where is it used */
-button.btn-cart {
-    background: var(--primary-blue);
-    color: var(--white);
+button.btn-full-width {
     width: 100%;
+    justify-content: center;
 }
 
 .increment {

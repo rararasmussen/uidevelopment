@@ -227,13 +227,14 @@ footer .container {
 }
 
 /* Section for Product Page */
+/* we need to make this so that the sections stack on top of each other when viewport shrinks width, not just get smaller */
 .product-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
     padding: 20px;
-    height: 70dvh;
+    height: 70vh;
 }
 
 .image-container {
@@ -250,9 +251,11 @@ footer .container {
     
 }
 
+/* need to work out why this image never scales */
 .image-container img{
-    width:fit-content;
-    padding: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .product-info {
@@ -266,34 +269,15 @@ footer .container {
     align-content: space-around;
 }
 
+.product-info * {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
 .product-info h3, p{
     width: 100%;
     display: flex;
 }
-
-.increment-wrapper {
-    border: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--primary-blue);
-    height: 50px;
-    min-width: 100px;
-    width: 130px;
-    padding: 4px 15px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0
-}
-
-.increment-wrapper span {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 
 .detail-ship-faq {
     background-color: var(--background-light-gray);
@@ -356,16 +340,22 @@ hr {
     height: 1.5px;
 }
 
-.calc-shipping, .coupon-code, .total{
+.cart-detail{
     border-radius: 20px;
     background-color: var(--white); 
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.coupon-code-container input {
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 1px solid;
+.input-field {
+    width: 95%;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--black);
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--medium-gray);
 }
