@@ -19,19 +19,11 @@ functionality:
 
 
 Tom:
-Done - Explore games grid section (felx-grow) 
-Done - Main Banner (Product Card) placement 
-Done - Halo section prod-desription and javascript for increment number
-Done - Shopping cart layout html and css
-- Checkout layout 
-Done We already had a "coupon code" before - Discount code to the "express checkout" 
 - Report template from A2 New Figma File
 - Details, Shipping, FAQ understand how the HTML and JS works 
 
 Annika:
 - finish filling in content in home page
 - finish xbox page
-- Product List grey-box for each product 
-- see if i can work out gradients & drop shadows
 - do search button
 - make some sort of hover class for buttons, divs, etc that get bigger & have drop shadow when hovered on
