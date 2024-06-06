@@ -1,26 +1,27 @@
 @import url(colours.css);
 @import url(typography.css);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans);
+@import url(https://fonts.googleapis.com/css?family=Akshar);
 
 button {
-    font: font-body;
-    font-size: 16px;
+    font-family: var(--font-body);
+    font-size: 18px;
     border-radius: 10px;
     padding: 12px 16px;
     justify-content: center;
     align-items: center;
     text-align: center;
     border: 0;
+    height: 48px;
 }
 
-button.btn-primary, .add-to-cart {
+button.btn-primary {
     background: var(--primary-blue);
     color: var(--white);
-}
-
-button.btn-cart {
-    background: var(--primary-blue);
-    color: var(--white);
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 button.btn-light {
@@ -50,4 +51,61 @@ button:hover {
     margin-left: 48px;
 }
 
+button img{
+    height: 15px;
+    margin-right: 8px;
+}
 
+/* remove this? where is it used */
+button.btn-cart {
+    background: var(--primary-blue);
+    color: var(--white);
+    width: 100%;
+}
+
+.increment {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--primary-blue);
+    height: 48px;
+    min-width: 100px;
+    width: 130px;
+    padding: 4px 12px;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0
+}
+
+.increment:hover {
+    transform:scale(1);
+    box-shadow:0px 0px 0px rgba(53, 17, 163, 0.2);
+}
+
+.increment span {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+/* condense duplicate stuff */
+.increment-wrapper-cart {
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--primary-blue);
+    height: 30px;
+    min-width: 40px;
+    width: 60px;
+    padding: 4px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0
+}

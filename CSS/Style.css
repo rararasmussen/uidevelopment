@@ -271,25 +271,6 @@ footer .container {
     display: flex;
 }
 
-
-.add-to-cart {
-    border: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--primary-blue);
-    height: 60px;
-    min-width: 100px;
-    width: 150px; 
-    padding: 4px 15px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.add-to-cart img{
-    height: 15px;
-}
-
 .increment-wrapper {
     border: 2px;
     border-style: solid;
@@ -365,22 +346,6 @@ footer .container {
     background-color: var(--background-light-gray);
     margin: 10px;
     border-radius: 10px;
-}
-
-.increment-wrapper-cart {
-    border: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--primary-blue);
-    height: 30px;
-    min-width: 40px;
-    width: 60px;
-    padding: 4px 15px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0
 }
 
 /* for the horizontal line breaks in the shopping cart */
