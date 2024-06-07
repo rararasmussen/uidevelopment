@@ -5,7 +5,8 @@
 
 functionality:
 - adding and removing from shopping cart must work
-- incrementing & adding correct # of items to cart must work
+- incrementing
+- adding correct # of items to cart must work
 - typing in search works - but can just have a fixed result page
 - filters don't need to work
 - drop downs should work - need to be able to see options and select
@@ -17,6 +18,11 @@ functionality:
 - nav bar drop down should work
 - add a little notification dot to cart when there's something in it
 
+pages still to be added:
+- pop ups for added to cart
+- order confirmation (could keep as pop up or just make it its own page if simpler)
+- xbox page -> search results page, just need to change header
+
 
 Tom:
 - Report template from A2 New Figma File
@@ -24,6 +30,8 @@ Tom:
 
 Annika:
 - finish filling in content in home page
-- finish xbox page
+- finish xbox page - thing at bottom to show next/prev page
 - do search button
-- make some sort of hover class for buttons, divs, etc that get bigger & have drop shadow when hovered on
+- make some sort of hover class for buttons, divs, etc that get bigger & have drop shadow when hovered on - hoverable?
+- drop down for FAQ, details, shipping
+- T&C check box on shopping cart
