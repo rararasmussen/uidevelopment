@@ -12,10 +12,12 @@ body {
     display: flex;
     flex-direction: column; /* Align items vertically */
     justify-content: space-between; /* Distribute space between items */
+    font-family: var(--font-body);
+    font-size: 16px;
 }
 
 main {
-    margin-top: 20vh;
+    margin-top: max(20vh, 120px);
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -24,6 +26,7 @@ main {
 .top-nav {
     padding: 20px;
     height: 10vh;
+    min-height: 70px;
     width: auto;
     background: var(--primary-blue-gradient);
     color: white;
@@ -386,4 +389,11 @@ input:focus {
     border-radius: 10px;
     padding: 4px 8px;
     background-color: var(--white);
+}
+
+.terms-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
