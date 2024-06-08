@@ -74,13 +74,14 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-.nav-button {
+.nav-button, details, .dropdown-content {
     font-family: var(--font-header);
     color: var(--black);
     line-height: var(--line-height-heading);
     margin: 0 0 1rem 0;
     font-size: 2rem;
 }
+
 
 /* Styling breadcrumbs text */
 .breadcrumbs {

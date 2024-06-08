@@ -22,7 +22,7 @@
         <div class="nav-container"> 
             
             <nav class="top-nav">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo"> <!--"a" attribte to link instead of div-->
                     <img src="Components/Logo.svg" alt="The Game Expert Logo"> 
                 </a>
 
@@ -41,9 +41,16 @@
             </nav>
 
             <div class="nav-bar">
+                
                 <ul>
                     <li><a class="nav-button" href="#What's_new">WHAT'S NEW</a></li>
-                    <li><a class="nav-button" href="#Console_type">CONSOLE TYPE</a></li>
+                    <details closed> 
+                        <summary>CONSOLE TYPE</summary>
+                        <div class="dropdown-content">
+                            <p>XBOX</p>
+                            <p>PLAYSTATION</p>
+                        </div>
+                    </details>
                     <li><a class="nav-button" href="#Collectables">COLLECTABLES</a></li>
                     <li><a class="nav-button" href="#About_us">ABOUT US</a></li>
                 </ul>
