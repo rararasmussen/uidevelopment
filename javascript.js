@@ -78,3 +78,5 @@ function collapseAllPanels() {
 function expandPanel(panel) {
     panel.style.display = "block";
 }
+
+// This is for linking the console cards to the page
