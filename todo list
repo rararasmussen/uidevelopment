@@ -27,11 +27,6 @@ pages still to be added:
 Tom:
 - Report template from A2 New Figma File
 
-- reverse colors on product page - what do you mean? have the grey background 
-
-Done - accordion drop down on Console Type in nav
-** I need to add all the consoles then we can apply to the rest of the pages 
-
 - make grid at top of halo page resizable so that the details drop down below the image when screen gets narrower (there's also an issue where it starts to run into the shipping/faq because it doesn't bump them down)
 
 - maybe instead of having an arrow to go to other product photo we put both of the product photos in the image container - there's plenty of space
