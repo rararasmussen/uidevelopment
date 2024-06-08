@@ -70,6 +70,17 @@ button.btn-full-width {
     justify-content: center;
 }
 
+.accordion {
+    transition: 0.4s;
+    display:inline;
+    text-decoration: underline;
+    margin-right: 24px;
+}
+
+.active, .accordion:hover {
+    font-weight:bold;
+}
+
 .increment {
     border: 2px;
     border-style: solid;
