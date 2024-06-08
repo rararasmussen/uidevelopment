@@ -54,7 +54,7 @@ faq.addEventListener("click", () => {
 });
 details.addEventListener("click", () => {
     details.classList.toggle("active");
-    let panel = document.getElementById("faq-text");
+    let panel = document.getElementById("details-text");
     panelLogic(panel);
 });
 

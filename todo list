@@ -29,6 +29,8 @@ Tom:
 - Details, Shipping, FAQ understand how the HTML and JS works 
 - reverse colors on product page
 - accordion drop down on Console Type in nav
+- make grid at top of halo page resizable so that the details drop down below the image when screen gets narrower (there's also an issue where it starts to run into the shipping/faq because it doesn't bump them down)
+- maybe instead of having an arrow to go to other product photo we put both of the product photos in the image container - there's plenty of space
 
 Annika:
 - finish xbox page - thing at bottom to show next/prev page

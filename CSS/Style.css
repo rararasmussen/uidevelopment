@@ -14,12 +14,13 @@ body {
     justify-content: space-between; /* Distribute space between items */
     font-family: var(--font-body);
     font-size: 16px;
+    background-color: var(--white);
 }
 
 main {
     margin-top: max(20vh, 120px);
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* Adding background colour to Top navigation*/
@@ -250,7 +251,7 @@ footer .container {
 .product-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: auto;
     gap: 10px;
     height: 70vh;
 }
@@ -268,19 +269,28 @@ footer .container {
 .image-container img{
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 .product-info {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
 }
 
-.product-details {
-    
+.shipping-faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-background-gray {
+    background-color: var(--background-light-gray);
+    border-radius: 20px;
+    padding: 16px;
+}
+.section-background-gray .background-tile{
+    background-color: var(--white);
 }
 
 .product-info>* {
