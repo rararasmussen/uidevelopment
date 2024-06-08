@@ -108,3 +108,7 @@ a.breadcrumbs:hover {
     font-size: 1em;
     color: var(--primary-blue)
 }
+
+footer p {
+    color: white;
+}

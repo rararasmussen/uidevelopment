@@ -196,7 +196,7 @@ details {
 }
 
 footer {
-    background-color: var(--background-light-gray);
+    background-color: var(--primary-blue);
     padding: 32px;
     border-radius: 20px 20px 0px 0px;
     display: flex;
@@ -207,6 +207,7 @@ footer {
     border-color: var(--inactive-dark-gray); /* unsure about border */
     border-style: solid;
     border-width: 1px;;
+
 }
 
 footer .socials-container {
@@ -268,6 +269,7 @@ footer .container {
     grid-template-rows: auto;
     gap: 10px;
     height: 70vh;
+    padding: 16px;
 }
 
 .image-container {
@@ -301,7 +303,7 @@ footer .container {
 .section-background-gray {
     background-color: var(--background-light-gray);
     border-radius: 20px;
-    padding: 16px;
+    padding: 16px; 
 }
 .section-background-gray .background-tile{
     background-color: var(--white);
@@ -318,7 +320,7 @@ footer .container {
 }
 
 .background-tile {
-    background-color: var(--background-light-gray);
+    background-color: var(--white);
     margin: 10px;
     border-radius: 20px;
     padding: 20px;
@@ -331,7 +333,7 @@ footer .container {
 }
 
 /* This is the section for the shopping cart */
-.cart-background {
+.background {
     background: var(--background-light-gray);
 }
 
