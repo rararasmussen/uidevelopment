@@ -586,12 +586,34 @@ td {
 
 /* Popup button for Adding to Cart */
 .popup {
-    background-color: var(--primary-blue-gradient);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--medium-gray);
     width: 440px;
     height: 300px;
     border-radius: 10px;
-    text-align: center;
     display: none;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
+    z-index: 2;
+
+    text-align: end;
+
+    padding: 20px;
+}
+
+.popup > h3, .btn-primary, .btn-light {
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary {
+    z-index: 1;
 }

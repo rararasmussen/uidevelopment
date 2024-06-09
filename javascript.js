@@ -89,27 +89,15 @@ document.getElementById('coupon-form').addEventListener('submit', function(event
     // display the message
     const messageElement = document.getElementById('coupon-message');
     messageElement.textContent = `Coupon code ${couponCode} applied`;
-  });
+});
 
-  function applyCoupon(event) {
-    event.preventDefault();
-    // get the entered coupon code
-    const couponCode = document.getElementById('coupon-input').value;
-    
-    // display the message
-    const messageElement = document.getElementById('coupon-message');
-    messageElement.textContent = `Coupon code "${couponCode}" applied`;
-  }
-// To enable access to ShowButton element 
-let ShowButton = document.getElementById ("ShowButton");
+function applyCoupon(event) {
+event.preventDefault();
+// get the entered coupon code
+const couponCode = document.getElementById('coupon-input').value;
 
-// Same acccess for CloseButton element 
-let CloseButton = document.getElementById ("CloseButton");
+// display the message
+const messageElement = document.getElementById('coupon-message');
+messageElement.textContent = `Coupon code "${couponCode}" applied`;
+}
 
-// Get the popup element
-let pop = document.getElementBySelector (".popup");
-
-// Show the popup on click 
-ShowButton.addEventListener ("click", () => {
-    popup.style.display = "block"
-})
