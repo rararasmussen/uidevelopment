@@ -31,12 +31,14 @@
     </header>
     <main>
         <div class="centered">
-            <img src="Components/checkout-progressbar.svg">
+            <img src="Components/checkout-progressbar3.svg">
         </div>
         <section class="checkout-grid">
             <div class="background-tile gray" id="order-summary">
-                <h5>ORDER SUMMARY<img src="Components/icon-chevron.svg"></h5> 
-                <h5><b>$104.60</b></h5>
+                <div class="order-summary-header"> 
+                    <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
+                    <h5><b>$104.60</b></h5>
+                </div>
                 <div class="panel" id="order-summary-content">
                     <!-- cart items go here in dropdown panel -->
                 </div>
@@ -44,9 +46,23 @@
             <section class="column">
                 <div>
                     <h3>CHECKOUT SUMMARY</h3>
-                    <img src="Components/icon-applepay.svg">
-                    <img src="Components/icon-paypal.svg">
-                    <img src="Components/icon-googleplay.svg">
+                    <div class="div-table">
+                        <div class="table-row display-only">
+                            <p>Contact</p>
+                            <p class = "text-gray">email@email.com</p>
+                            <a>Change</a>
+                        </div>
+                        <div class="table-row display-only">
+                            <p>Ship to</p>
+                            <p class = "text-gray">123 Main Street, Suburb, VIC Australia 1234</p>
+                            <a>Change</a>
+                        </div>
+                        <div class="table-row display-only">
+                            <p>Shipping method</p>
+                            <p class = "text-gray">Standard</p>
+                            <a>Change</a>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h3>PAYMENT</h3>

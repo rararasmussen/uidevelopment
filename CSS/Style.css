@@ -511,9 +511,6 @@ section.section-background {
 
 /* Table styles */
 table {
-    /* border-collapse: collapse; */
-    border: 1px solid var(--primary-blue);
-    border-radius: 10px;
     width: 100%;
 }
 
@@ -538,6 +535,12 @@ td {
     display: block;
 }
 
+.table-row.display-only {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
 .table-row:has(input[type="radio"]:checked) {
     background: linear-gradient(var(--white), var(--white)) padding-box,
               var(--blue-orange-gradient) border-box;
@@ -549,10 +552,6 @@ td {
 }
 .table-row:last-child {
     border-radius: 0px 0px 4px 4px;
-}
-
-.div-table.active {
-    border-radius: 
 }
 
 .order-summary-header {
