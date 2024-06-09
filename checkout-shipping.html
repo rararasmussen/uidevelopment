@@ -31,7 +31,7 @@
     </header>
     <main>
         <div class="centered">
-            <img src="Components/checkout-progressbar.svg">
+            <img src="Components/checkout-progressbar2.svg">
         </div>
         <section class="checkout-grid">
             <div class="background-tile gray" id="order-summary">
@@ -43,20 +43,31 @@
             </div>
             <section class="column">
                 <div>
-                    <h3>EXPRESS CHECKOUT</h3>
-                    <img src="Components/icon-applepay.svg">
-                    <img src="Components/icon-paypal.svg">
-                    <img src="Components/icon-googleplay.svg">
+                    <h3>ADDRESS</h3>
+                    <input type="text" class="input-field" placeholder="Address search">
                 </div>
                 <div>
-                    <h3>CONTACT DETAILS</h3>
-                    <input type="text" class="input-field" placeholder="First name">
-                    <input type="text" class="input-field" placeholder="Last name">
-                    <input type="text" class="input-field" placeholder="Email">
-                    <input type="text" class="input-field" placeholder="Phone">
+                    <h3>SHIPPING METHOD</h3>
+                    <table>
+                        <tr>
+                            <td><input type="radio" id="standard" name="shipping-method" value="Standard"></td>
+                            <td><label for="standard">Standard</label><br></td>
+                            <td><p><b>$5.00</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="two-day" name="shipping-method" value="2-Day"></td>
+                            <td><label for="two-day">2-Day</label><br></td>
+                            <td><p><b>$12.00</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="overnight" name="shipping-method" value="Overnight"></td>
+                            <td><label for="overnight">Overnight</label></td>
+                            <td><p><b>$12.00</b></p></td>
+                        </tr>
+                      </table>
                 </div>
                 <div>
-                    <button class="btn-primary">Continue to Shipping ></button>
+                    <button class="btn-primary">Continue to Payment ></button>
                 </div>
             </section>
         </section>

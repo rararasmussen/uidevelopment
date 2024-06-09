@@ -116,3 +116,7 @@ a.breadcrumbs:hover {
 footer p {
     color: white;
 }
+
+.inline {
+    display: inline;
+}

@@ -481,7 +481,7 @@ section.section-background {
     }
 }
 
-/* This is the section for checkout page */
+/* This is the section for checkout pages */
 .checkout-grid {
     display: flex;
     flex-direction: row;
@@ -508,3 +508,27 @@ section.section-background {
     width: 40%;
     min-width: 500px;
 }
+
+/* Table styles */
+table {
+    /* border-collapse: collapse; */
+    border: 1px solid var(--primary-blue);
+    border-radius: 10px;
+    width: 100%;
+}
+
+tr {
+    text-align: left;
+}
+
+tr:hover {
+    /* padding: 4px; */
+    background-color: var(--background-light-gray);
+}
+
+td {
+    vertical-align: baseline;
+    border-spacing: 0;
+}
+
+
