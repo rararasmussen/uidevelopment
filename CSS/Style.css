@@ -280,6 +280,7 @@ footer .container {
 
 .product-wrapper {
     display: grid;
+    grid-template-rows:max-content;
 }
 
 
@@ -478,4 +479,24 @@ section.section-background {
     .nav-button {
         font-size: 2rem;
     }
+}
+
+/* This is the section for checkout page */
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    margin-top: 24px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 24px;
+    margin: 10px;
+}
+
+.centered {
+    text-align: center;
 }
