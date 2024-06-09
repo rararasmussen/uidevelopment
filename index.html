@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
-    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "CSS/reset.css">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,14 +27,14 @@
                 </a>
 
                 <div class="nav-items">
-                    <div class = "search-container">
-                        <img src = "Components/search-icon.svg">
-                        <input type="text" class="search-field" placeholder="Search for something">
+                    <div id="search-form" class="search-container" action="xbox.html">
+                        <button type="submit"><img src = "Components/search-icon.svg"></button>
+                        <input type="text" class="search-field" placeholder="Search...">
                     </div>
-                    <a href ="Account" class="account-button">
+                    <a href="" class="account-button">
                         <img src="Components/Account.svg" alt="Your Account">
                     </a>
-                    <a href="Basket" class="basket-button">
+                    <a href="cart.html" class="basket-button">
                         <img src="Components/Basket.svg" alt="Your Basket">
                     </a>
                 </div>
@@ -43,16 +43,20 @@
             <div class="nav-bar">
                 
                 <ul>
-                    <li><a class="nav-button" href="#What's_new">WHAT'S NEW</a></li>
+                    <li><a class="nav-button" href="xbox.html">WHAT'S NEW</a></li>
                     <details closed> 
                         <summary>CONSOLE TYPE</summary>
                         <div class="dropdown-content">
-                            <p>XBOX</p>
-                            <p>PLAYSTATION</p>
+                            <a href="xbox.html"><p>XBOX</p></a>
+                            <a href="xbox.html"><p>PLAYSTATION</p></a>
+                            <a href="xbox.html"><p>PC</p></a>
+                            <a href="xbox.html"><p>ATARI</p></a>
+                            <a href="xbox.html"><p>SEGA</p></a>
+                            <a href="xbox.html"><p>WII</p></a>
                         </div>
                     </details>
-                    <li><a class="nav-button" href="#Collectables">COLLECTABLES</a></li>
-                    <li><a class="nav-button" href="#About_us">ABOUT US</a></li>
+                    <li><a class="nav-button" href="xbox.html">COLLECTABLES</a></li>
+                    <li><a class="nav-button" href="xbox.html">ABOUT US</a></li>
                 </ul>
                 
             </div>
@@ -70,10 +74,10 @@
 
             <nav class="popular-brands">
                 <h4>POPULAR BRANDS:</h4>
-                <a href="#Pokemon"><img src="Components/Pokemon-Logo.svg" alt="Pokemon-Logo"></a>
-                <a href="#Xbox"><img src="Components/Xbox-Logo.svg" alt="Your Account"></a>
-                <a href=#Play-Station><img src="Components/Play-Station-Logo.svg" alt="Your Basket"></a>
-                <a href=#Sega><img src="Components/Sega-Logo.svg" alt="Your Basket"></a>
+                <a href="xbox.html"><img src="Components/Pokemon-Logo.svg" alt="Pokemon-Logo"></a>
+                <a href="xbox.html"><img src="Components/Xbox-Logo.svg" alt="Your Account"></a>
+                <a href="xbox.html"><img src="Components/Play-Station-Logo.svg" alt="Your Basket"></a>
+                <a href="xbox.html"><img src="Components/Sega-Logo.svg" alt="Your Basket"></a>
             </nav>
         </section>
             <section class = "section">

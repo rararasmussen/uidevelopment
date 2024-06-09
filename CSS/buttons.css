@@ -48,7 +48,7 @@ button.btn-inactive {
     color: var(--white);
 }
 
-button:hover {
+.btn-primary:hover, .btn-light:hover, .btn-important:hover, .btn-inactive:hover{
     transform:scale(1.02);
     box-shadow:0px 4px 4px rgba(53, 17, 163, 0.2);
 }
@@ -125,4 +125,17 @@ button.btn-full-width {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0
+}
+
+button[type="submit"]{
+    padding: 0px;
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+    border-radius:0px;
+    background-color: transparent;
+}
+button[type="submit"] img{
+    height: 24px;
+    width: 24px;
 }
