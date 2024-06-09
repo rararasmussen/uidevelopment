@@ -238,9 +238,9 @@ footer .container {
 
 .top-picks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
     grid-auto-rows: auto;
-    grid-gap: 48px;
+    grid-gap: 5%;
 }
 
 .product {
@@ -530,7 +530,7 @@ td {
 
 .table-row {
     border: 1px solid var(--medium-gray);
-    padding: 12px 12px 12px 16px;
+    padding: 12px 12px 8px 16px;
     align-content: center;
     display: block;
 }
@@ -539,6 +539,8 @@ td {
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    border-color: var(--primary-blue);
+    gap: 4px;
 }
 
 .table-row:has(input[type="radio"]:checked) {
