@@ -27,7 +27,7 @@
 
                 <div class="nav-items">
                     <a><form id="search-form" class="search-container" action="xbox.html">
-                        <button type="submit"><img src = "Components/search-icon.svg"></button>
+                        <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
                         <input type="text" class="search-field" placeholder="Search...">
                     </form></a>
                     <a href ="" class="account-button">
@@ -99,15 +99,21 @@
                 </section>
 
                 <aside class="cart-detail">
-                    <h4>CALCULATE SHIPPING OPTIONS</h4>
-                    <input type="text" class="input-field" placeholder="Enter postcode or suburb">
-                    <button class="btn-primary btn-full-width">Calculate</button>
+                    <h5>CALCULATE SHIPPING OPTIONS</h5>
+                    <form id="shipping-form">
+                        <input type="text" id="shipping-input" class="input-field" placeholder="Enter postcode or suburb">
+                        <button type="submit" class="btn-primary btn-full-width">Calculate</button>
+                        <p id="shipping-message"></p>
+                    </form>
                 </aside>
 
                 <aside class="cart-detail">
-                    <h4>COUPON CODE</h4>
-                    <input type="text" class="input-field" placeholder="Enter coupon code">
-                    <button class="btn-primary btn-full-width">Apply Code</button>
+                    <h5>COUPON CODE</h5>
+                    <form id="coupon-form" onsubmit="applyCoupon(event)">
+                        <input id="coupon-input" type="text" class="input-field" placeholder="Enter coupon code">
+                        <button type="submit" class="btn-primary btn-full-width">Apply Code</button>
+                        <p id="coupon-message"></p>
+                    </form>
                 </aside>
 
                 <aside class="cart-detail">

@@ -127,7 +127,7 @@ button.btn-full-width {
     flex-shrink: 0
 }
 
-button[type="submit"]{
+.btn-icon{
     padding: 0px;
     margin: 0px;
     width: 24px;
