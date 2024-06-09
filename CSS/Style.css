@@ -581,3 +581,17 @@ td {
     justify-content: space-between;
     align-content: space-between;
 }
+
+
+
+/* Popup button for Adding to Cart */
+.popup {
+    background-color: var(--primary-blue-gradient);
+    width: 440px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    transition: all 0.5s ease;
+    transition-duration: 0.5s;
+}
