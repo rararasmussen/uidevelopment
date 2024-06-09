@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+    <link rel = "stylesheet" href = "reset.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game Experts</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/colours.css">
+    <link rel="stylesheet" href="CSS/typography.css">
+    <link rel="stylesheet" href="CSS/buttons.css">
+</head>
+
+<body>
+
+    <!--Navigation Section-->
+    <header>
+        <div class="nav-container"> 
+            
+            <nav class="top-nav cart-nav">
+                <a href="cart.html" class = "light">< Back to Cart</a>
+                <a href="index.html" class="logo">
+                    <img src="Components/Logo.svg" alt="The Game Expert Logo"> 
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <img src="Components/checkout-progressbar.svg">
+        </div>
+        <div class="background-tile gray">
+            <h5>Order Summary <img src="Components/icon-chevron.svg"></h5> 
+            <h5><b>$104.60</b></h5>
+            <div class="panel" id="order-summary-content">
+                <!-- cart items go here in dropdown panel -->
+            </div>
+        </div>
+        <div class="background-tile">
+            <h3>EXPRESS CHECKOUT</h3>
+            <img src="Components/icon-applepay.svg">
+            <img src="Components/icon-paypal.svg">
+            <img src="Components/icon-googleplay.svg">
+        </div>
+        <div class="background-tile">
+            <h3>CONTACT DETAILS</h3>
+            <input type="text" class="input-field" placeholder="First name">
+            <input type="text" class="input-field" placeholder="Last name">
+            <input type="text" class="input-field" placeholder="Email">
+            <input type="text" class="input-field" placeholder="Phone">
+        </div>
+        <button class="btn-primary">Continue to Shipping  ></button>
+    </main>
+    <footer></footer>
+</body>
+</html>

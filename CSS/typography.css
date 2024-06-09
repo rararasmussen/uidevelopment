@@ -74,6 +74,10 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+a.light {
+    color: var(--white);
+}
+
 .nav-button, details, .dropdown-content {
     font-family: var(--font-header);
     color: var(--black);
