@@ -35,8 +35,10 @@
         </div>
         <section class="checkout-grid">
             <div class="background-tile gray" id="order-summary">
-                <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
-                <h5><b>$104.60</b></h5>
+                <div class="order-summary-header"> 
+                    <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
+                    <h5><b>$104.60</b></h5>
+                </div>
                 <div class="panel" id="order-summary-content">
                     <!-- cart items go here in dropdown panel -->
                 </div>
@@ -48,7 +50,7 @@
                 </div>
                 <div>
                     <h3>SHIPPING METHOD</h3>
-                    <table>
+                    <!-- <table>
                         <tr>
                             <td><input type="radio" id="standard" name="shipping-method" value="Standard"></td>
                             <td><label for="standard">Standard</label><br></td>
@@ -64,7 +66,26 @@
                             <td><label for="overnight">Overnight</label></td>
                             <td><p><b>$12.00</b></p></td>
                         </tr>
-                      </table>
+                      </table> -->
+                      <div class="div-table">
+                        <label class="table-row">
+                            <label class="radio-input">
+                                <input type="radio" id="standard" name="shipping-method" value="Standard">
+                                Standard
+                            </label>
+                            <p class="inline"><b>$5.00</b></p>
+                        </label>
+                        <label class="table-row">
+                            <input type="radio" id="two-day" name="shipping-method" value="2-Day">
+                            <label for="two-day">2-Day</label>
+                            <p class="inline"><b>$12.00</b></p>
+                        </label>
+                        <label class="table-row">
+                            <td><input type="radio" id="overnight" name="shipping-method" value="Overnight">
+                            <label for="overnight">Overnight</label>
+                            <p class="inline"><b>$24.00</b></p>
+                        </div>
+                      </div>
                 </div>
                 <div>
                     <button class="btn-primary">Continue to Payment ></button>
