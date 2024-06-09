@@ -483,8 +483,9 @@ section.section-background {
 
 /* This is the section for checkout page */
 .checkout-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 32px;
     margin-top: 24px;
 }
@@ -495,8 +496,15 @@ section.section-background {
     text-align: left;
     gap: 24px;
     margin: 10px;
+    width: 40%;
+    min-width: 300px;
 }
 
 .centered {
     text-align: center;
+}
+
+#order-summary {
+    width: 40%;
+    min-width: 500px;
 }
