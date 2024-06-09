@@ -22,10 +22,8 @@ functionality:
 things still to do:
 - pop ups for added to cart **I can do this (thomas)
 - order confirmation (could keep as pop up or just make it its own page if simpler)
-- xbox page -> search results page, just need to change header
 - finish console type dropdown in nav - change to our chevron icon?, make wider to fit console type
 - need to add little vertical line dividers in nav bar - see prototype
-- make search bar go to xbox when enter is pressed
 - make drop down/search forms in cart & checkout work
 - add to cart needs to work
 - once product page works, need to make another one for another product - just copying stuff in
