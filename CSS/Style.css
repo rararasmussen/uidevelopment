@@ -488,6 +488,16 @@ section.section-background {
     .nav-button {
         font-size: 2rem;
     }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block !important;
+
+
+    }
 }
 
 /* This is the section for checkout pages */
@@ -654,3 +664,9 @@ main.no-margin {
     align-items: center;
 }
 
+/* hamburger menu for mobile */
+.hamburger {
+    display: none;
+    font-size: 0;
+    
+}
