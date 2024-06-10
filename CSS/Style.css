@@ -310,9 +310,9 @@ footer .container {
     grid-column: 3 / 4;
     
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-start;
-    
+    gap: 10px;
     
 }
 

@@ -146,3 +146,29 @@ button[type="submit"] img{
     border-radius: 10px;
 }
 
+.continue-shopping {
+    font-family: var(--font-body);
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    background: var(--primary-blue);
+    color: var(--white);
+    display: flex;
+}
+
+.view-cart {
+    background: var(--white-gradient);
+    color: var(--black);
+    font-family: var(--font-body);
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+}
