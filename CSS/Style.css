@@ -69,7 +69,6 @@ main {
     justify-content: center;
     align-self: center;
     grid-row-start: 3;
-    backdrop-filter: blur(10px); 
 }
 
 .nav-bar > * {
@@ -341,12 +340,6 @@ footer .container {
     margin-top: 4px;
 }
 
-.product-info h3, p{
-    width: 100%;
-    display: flex;
-    flex-shrink: 1;
-}
-
 .background-tile {
     background-color: var(--white);
     margin: 10px;
@@ -519,7 +512,9 @@ section.section-background {
 }
 
 .centered {
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center
 }
 
 #order-summary {
@@ -616,4 +611,37 @@ td {
 }
 .btn-primary {
     z-index: 1;
+}
+
+/* Order confirmation section */
+
+.order-confirmation {
+    background: url("../Components/Main-banner.png");
+    background-size: cover;
+    display: flex;
+}
+
+.background-blur-tile {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(252, 250, 247, 0.10);
+    color: var(--white);
+    padding: 48px;
+    backdrop-filter: blur(10px);
+    gap: 16px;
+}
+/* 
+main.no-margin {
+    margin-top: 24px;
+} */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
 }

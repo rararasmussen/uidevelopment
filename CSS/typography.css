@@ -117,6 +117,12 @@ footer p {
     color: white;
 }
 
+.product-info h3, p{
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+}
+
 .inline {
     display: inline;
 }

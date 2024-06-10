@@ -26,7 +26,7 @@
 
                 <div class="nav-items">
                     <a><form id="search-form" class="search-container" action="xbox.html">
-                        <button type="submit"><img src = "Components/search-icon.svg"></button>
+                        <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
                         <input type="text" class="search-field" placeholder="Search...">
                     </form></a>
                     <a href ="Account" class="account-button">
@@ -59,7 +59,13 @@
             <a href="xbox.html" class="breadcrumbs">Xbox</a>
         </section>
 
-        <h2 class="page-title">XBOX</h2>
+        <div class="flex-row">
+            <h2 class="page-title">XBOX</h2>
+            <div>
+                <img src="Components/filter-button.svg" class="btn-gray">
+                <img src="Components/sort-button.svg" class="btn-gray">
+            </div>
+        </div>
         <!-- filters - should we do a sidebar or keep design from A2? -->
         <section class="product-grid">
             <a class="product" href="halo.html">
