@@ -74,7 +74,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-a.light {
+.light {
     color: var(--white);
 }
 
@@ -129,14 +129,6 @@ footer p {
 
 .text-gray {
     color: var(--inactive-dark-gray);
-}
-
-a.light {
-    font-size: 2.5rem;
-    font-family: var(--font-header);
-    font-weight: 200;
-    line-height: var(--line-height-heading);
-    margin: 0 0 0.3rem 0;
 }
 
 .cross {

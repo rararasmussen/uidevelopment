@@ -50,7 +50,6 @@ main {
 .nav-items {
     display: flex;
     flex-direction: row;
-    margin-bottom: 8px;
 }
 
 /* Nav-Bar Section */
