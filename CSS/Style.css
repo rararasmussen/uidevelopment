@@ -217,7 +217,7 @@ footer {
     border-style: solid;
     border-width: 1px;;
     
-    margin-top: auto; /* this pushes footer to the bottom */
+    /* margin-top: auto; this pushes footer to the bottom */
 
 }
 
@@ -482,7 +482,6 @@ section.section-background {
 /* responsivness of screen width */
 @media (max-width: 800px) {
 
-    
     .product-container {
         flex-direction: column;
         grid-template-columns: 1fr;
@@ -512,6 +511,7 @@ section.section-background {
         grid-template-columns: 1fr;
     }
 
+    
     .nav-button {
         font-size: 2rem;
     }
@@ -541,12 +541,19 @@ section.section-background {
         max-width: 300px; 
     }
 
+    .empty-footer {
+        width: 100%;
+    }
 
+    .centered {
+        margin: 10px;
+    }
 }
 
 /* This is the section for checkout pages */
 .checkout-grid {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 32px;
@@ -566,8 +573,10 @@ section.section-background {
 .centered {
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
+    /* padding: 20px; */
 }
+
 
 #order-summary {
     width: 40%;
@@ -721,4 +730,6 @@ main.no-margin {
     margin: 10px;
     text-decoration: none;
     background: transparent;
+    width: 40px;
 }
+
