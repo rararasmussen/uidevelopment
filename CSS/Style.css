@@ -507,6 +507,11 @@ section.section-background {
     .search-icon {
         display: block !important;
     }
+
+    .popup {
+        width: calc(100%-20px); /* space between popup and edge of screen */
+        max-width: 300px; 
+    }
 }
 
 /* This is the section for checkout pages */
@@ -612,9 +617,6 @@ td {
     padding: 20px;
     display: none; /* Initllay hidden */
     text-align: center;
-    margin: 10px;
-    padding: 20px;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 } 
 
