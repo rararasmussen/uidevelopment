@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
-    <script src="store.js"></script>
+    <script src="store.js" async></script>
     
 </head>
 <body class="background">
@@ -66,16 +66,16 @@
                         </div>
                         <div class="details+price">
                             <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
-                            <h4>$59.90</h4>
+                            <h4 class="cart-price">$59.91</h4>
                         </div>
 
                         <div class="increment-wrapper-cart">
                             <span class="minus">-</span>
-                            <span class="number">1</span>
+                            <span class="number quantity">1</span>
                             <span class="plus">+</span>
                         </div>
 
-                        <button class="btn-text">Remove</button>
+                        <button class="btn-text btn-remove">Remove</button>
                     </article>
                     <hr size="5">
                     <article class="cart-item">
@@ -84,16 +84,16 @@
                         </div>
                         <div class="details+price">
                             <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
-                            <h4>$59.90</h4>
+                            <h4 class="cart-price">$59.91</h4>
                         </div>
 
                         <div class="increment-wrapper-cart">
                             <span class="minus">-</span>
-                            <span class="number">1</span>
+                            <span class="number quantity">1</span>
                             <span class="plus">+</span>
                         </div>
 
-                        <button class="btn-text">Remove</button>
+                        <button class="btn-text btn-remove">Remove</button>
                     </article>
 
                     <hr size="5">
@@ -118,7 +118,7 @@
                 </aside>
 
                 <aside class="cart-detail">
-                    <h4>TOTAL: $104.6</h4>
+                    <h4 id="total-price">TOTAL: $104.6</h4>
                     <div class = "terms-container">
                         <div class = "checkbox-container">
                             <input type = "checkbox" id = "checkbox-terms">

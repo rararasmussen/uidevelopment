@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
-    <script src="store.js"></script>
+    <script src="store.js" async></script>
     
 </head>
 <body class="background">
@@ -64,12 +64,12 @@
         <section class="product-wrapper"> 
             <section class="product-container">
                 <section class="image-container background-tile">
-                    <img src="Components/product-photos/Halo-3-ODST.png">
+                    <img class = "item-image" src="Components/product-photos/Halo-3-ODST.png">
                 </section>
     
                 <aside class="product-info background-tile"> 
-                    <h3>HALO 3 ODST COMPLETE IN ORIGINAL CASE</h3>
-                    <h3><b>$9.90</b></h3>
+                    <h3 class="item-title">HALO 3 ODST COMPLETE IN ORIGINAL CASE</h3>
+                    <h3 class="item-price">$9.90</h3>
                     <p><img src="Components/fire.svg">&nbsp 9 people have this in their cart</p>
                     
                     <div class="outer">
@@ -84,7 +84,7 @@
                                 View Cart
                             </button>
                         </div>
-                        <button class="btn-primary" id="showbtn"><img src="Components/Basket.svg" alt="Add to Cart">
+                        <button class="btn-primary btn-add-to-cart" id="showbtn"><img src="Components/Basket.svg" alt="Add to Cart">
                             Add to Cart
                         </button>
                     </div>

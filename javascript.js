@@ -100,4 +100,3 @@ const couponCode = document.getElementById('coupon-input').value;
 const messageElement = document.getElementById('coupon-message');
 messageElement.textContent = `Coupon code "${couponCode}" applied`;
 }
-
