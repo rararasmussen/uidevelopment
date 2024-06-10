@@ -8,12 +8,13 @@ let closebtn = document.getElementById("closebtn");
 // Get the popup element
 let popup = document.querySelector (".popup");
 
+let overlay = document.querySelector (".overlay");
+
 // Show the popup on click 
 showbtn.addEventListener ("click", () => {
     popup.style.display = "block";
-    // showbtn.style.display = "none";
     overlay.style.display = "block"; //shows overlay
-    document.body.style.backgroundColor = "#9EA9B1";
+    document.documentElement.style.backgroundColor = "#848189"; //Background for the whole document
 });
 
 // Close popup on click with cross

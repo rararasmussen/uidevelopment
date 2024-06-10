@@ -17,7 +17,6 @@
     
 </head>
 <body class="background">
-    <!--Navigation Section-->
     <header>
         <div class="nav-container"> 
             
@@ -72,23 +71,30 @@
                     <h3 class="item-price">$9.90</h3>
                     <p><img src="Components/fire.svg">&nbsp 9 people have this in their cart</p>
                     
-                    <div class="outer">
-                        <div class="popup">
-                            <button class="cross" id="closebtn">
-                                <img src="Components/Cross.svg" alt=" Close Popup">
-                            </button>
-                            <h3>ADDED TO CART!</h3>
-                            <br />
-                            <button class="btn-primary">Continue Shopping</button>
-                            <button class="btn-light"><img src="Components/Basket-dark.svg" alt="View Cart">
-                                View Cart
-                            </button>
-                        </div>
+                    <div class="overlay">
+                        <div class="outer">
+                            <div class="popup">
+                                <div class="popup-content">
+                                    <a class="cross" id="closebtn">
+                                        <img src="Components/Cross.svg" alt=" Close Popup">
+                                    </a>
+                                    <a class="light"><img src="Components/white-tick.svg" alt="White Tick">
+                                        ADDED TO CART!
+                                    </a>
+                                    <button class="btn-primary">Continue Shopping</button>
+                                    <button class="btn-light"><img src="Components/Basket-dark.svg" alt="View Cart">
+                                        View Cart
+                                    </button>
+                                </div>
+                                
+                            </div>
                         <button class="btn-primary btn-add-to-cart" id="showbtn"><img src="Components/Basket.svg" alt="Add to Cart">
                             Add to Cart
                         </button>
+                        </div>
                     </div>
-    
+                    
+                    
                     <button class="increment">
                         <span class="minus">-</span>
                         <span class="number">1</span>
