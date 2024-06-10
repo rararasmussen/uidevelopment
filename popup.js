@@ -13,8 +13,8 @@ let overlay = document.querySelector (".overlay");
 // Show the popup on click 
 showbtn.addEventListener ("click", () => {
     popup.style.display = "block";
+    showbtn.style.display = "block";
     overlay.style.display = "block"; //shows overlay
-    document.documentElement.style.backgroundColor = "#848189"; //Background for the whole document
 });
 
 // Close popup on click with cross
