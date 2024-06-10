@@ -130,14 +130,14 @@ details {
     background-size: cover;
     display: flex;
     border-radius: 20px;
-    width: 97%; /* 100% makes it wider than screen width */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
     justify-content: left;
     align-items: center;
     text-align: left;
     color: var(--white);
-    padding-left: 2em;
+    padding-left: 6%;
 }
 
 .trade-banner {
