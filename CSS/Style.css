@@ -478,7 +478,7 @@ section.section-background {
     margin-bottom: 32px;
 }
 
-
+/* responsivness of screen width */
 @media (max-width: 800px) {
     .product-container {
         display: grid;
@@ -494,9 +494,19 @@ section.section-background {
     }
 
     .hamburger {
+        display: block !important; /* force block to appear */
+    }
+
+    .popular-brands {
+        display: none;
+    }
+
+    #search-form {
+        display: none;
+    }
+
+    .search-icon {
         display: block !important;
-
-
     }
 }
 
@@ -668,4 +678,12 @@ main.no-margin {
 .hamburger {
     display: none;
     font-size: 0;
+}
+
+.search-icon {
+    display: none;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background: transparent;
 }
