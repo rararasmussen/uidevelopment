@@ -20,26 +20,20 @@ functionality:
 
 
 things still to do:
-- pop ups for added to cart **I can do this (thomas)
-- order confirmation (could keep as pop up or just make it its own page if simpler)
-- finish console type dropdown in nav - change to our chevron icon?, make wider to fit console type
-- need to add little vertical line dividers in nav bar - see prototype
-- make drop down/search forms in cart & checkout work
-- add to cart needs to work
 - once product page works, need to make another one for another product - just copying stuff in
 - responsiveness & changing things for mobile version
-- add in little filter buttons to xbox page
 
 Tom:
 - Report template from A2 New Figma File
+- pop ups for added to cart **I can do this (thomas)
+- finish console type dropdown in nav - change to our chevron icon?, make wider to fit console type
+- need to add little vertical line dividers in nav bar - see prototype
+- make drop down/search forms in cart & checkout work
+- work out responsiveness for nav bar
 
 - make grid at top of halo page resizable so that the details drop down below the image when screen gets narrower (there's also an issue where it starts to run into the shipping/faq because it doesn't bump them down)
 
 - maybe instead of having an arrow to go to other product photo we put both of the product photos in the image container - there's plenty of space
 
 Annika:
-- finish xbox page - thing at bottom to show next/prev page
-- make some sort of hover class for buttons, divs, etc that get bigger & have drop shadow when hovered on - hoverable? not super important rn
-- drop down for FAQ, details, shipping
-- T&C check box on shopping cart - do later since it requires making all the rules for a custom checkbox
-- figure out the nightmare that is the shipping table text alignment
+- add to cart needs to work
