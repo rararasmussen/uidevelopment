@@ -548,11 +548,6 @@ section.section-background {
         display: block !important;
     }
 
-    .popup {
-        width: calc(100%-20px); /* space between popup and edge of screen */
-        max-width: 300px; 
-    }
-
     .empty-footer {
         width: 100%;
     }
