@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
-    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "CSS/reset.css">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,20 +17,44 @@
     
 </head>
 <body class="background">
+    <!--Navigation Section-->
     <header>
         <div class="nav-container"> 
             
             <nav class="top-nav">
-                <a href="index.html" class="logo">
+                <details closed class="hamburger"> 
+                    <summary><img src="Components/hamburger.svg" alt="Hamburger Menu">
+                    </summary>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a class="nav-button" href="xbox.html">WHAT'S NEW</a></li>
+                            <details closed> 
+                                <summary>CONSOLE TYPE</summary>
+                                <div class="dropdown-content">
+                                    <a href="xbox.html"><p>XBOX</p></a>
+                                    <a href="xbox.html"><p>PLAYSTATION</p></a>
+                                    <a href="xbox.html"><p>PC</p></a>
+                                    <a href="xbox.html"><p>ATARI</p></a>
+                                    <a href="xbox.html"><p>SEGA</p></a>
+                                    <a href="xbox.html"><p>WII</p></a>
+                                </div>
+                            </details>
+                            <li><a class="nav-button" href="xbox.html">COLLECTABLES</a></li>
+                            <li><a class="nav-button" href="xbox.html">ABOUT US</a></li>
+                        </ul>
+                    </div>
+                </details>
+                <a href="search-page.html" class="search-icon"><img src="Components/search-white.svg"></a>
+                <a href="index.html" class="logo"> <!--"a" attribte to link instead of div-->
                     <img src="Components/Logo.svg" alt="The Game Expert Logo"> 
                 </a>
 
                 <div class="nav-items">
                     <a><form id="search-form" class="search-container" action="xbox.html">
-                        <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
-                        <input type="text" class="search-field" placeholder="Search...">
+                            <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
+                            <input type="text" class="search-field" placeholder="Search...">
                     </form></a>
-                    <a href ="index.html" class="account-button">
+                    <a href="" class="account-button">
                         <img src="Components/Account.svg" alt="Your Account">
                     </a>
                     <a href="cart.html" class="basket-button">
@@ -40,11 +64,22 @@
             </nav>
 
             <div class="nav-bar">
+                
                 <ul>
-                    <li><a class="nav-button" href="#What's_new">WHAT'S NEW</a></li>
-                    <li><a class="nav-button" href="#Console_type">CONSOLE TYPE</a></li>
-                    <li><a class="nav-button" href="#Collectables">COLLECTABLES</a></li>
-                    <li><a class="nav-button" href="#About_us">ABOUT US</a></li>
+                    <li><a class="nav-button" href="xbox.html">WHAT'S NEW</a></li>
+                    <details closed> 
+                        <summary>CONSOLE TYPE</summary>
+                        <div class="dropdown-content">
+                            <a href="xbox.html"><p>XBOX</p></a>
+                            <a href="xbox.html"><p>PLAYSTATION</p></a>
+                            <a href="xbox.html"><p>PC</p></a>
+                            <a href="xbox.html"><p>ATARI</p></a>
+                            <a href="xbox.html"><p>SEGA</p></a>
+                            <a href="xbox.html"><p>WII</p></a>
+                        </div>
+                    </details>
+                    <li><a class="nav-button" href="xbox.html">COLLECTABLES</a></li>
+                    <li><a class="nav-button" href="xbox.html">ABOUT US</a></li>
                 </ul>
                 
             </div>
@@ -68,7 +103,7 @@
 
             <aside class="product-info background-tile"> 
                 <h3 class="item-title">HALO 3 ODST COMPLETE IN ORIGINAL CASE</h3>
-                <h3 class="item-price">$9.90</h3>
+                <h3 class="item-price"><b>$9.90</b></h3>
                 <p><img src="Components/fire.svg">&nbsp 9 people have this in their cart</p>
                 
                 

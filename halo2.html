@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
+    <script src="store.js" async></script>
+    
 </head>
-<body class="grey-background">
+<body class="background">
     <!--Navigation Section-->
     <header>
         <div class="nav-container"> 
@@ -88,79 +90,85 @@
     <main>
         <!-- Breadcrumbs -->
         <section>
-            <a href="index.html" class="breadcrumbs">Home</a>
+            <a class="breadcrumbs">Home</a>
             <p class = "breadcrumbs">></p>
-            <a href="xbox.html" class="breadcrumbs">Xbox</a>
+            <a class="breadcrumbs">Xbox</a>
         </section>
 
-        <div class="flex-row">
-            <h2 class="page-title">XBOX</h2>
-            <div>
-                <img src="Components/filter-button.svg" class="btn-gray">
-                <img src="Components/sort-button.svg" class="btn-gray">
-            </div>
-        </div>
-        <!-- filters - should we do a sidebar or keep design from A2? -->
-        <section class="product-grid">
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/Halo-3-ODST.png">
-                <p>HALO 3 ODST Complete in Original Case </p>
-                <p><b>$9.90</b></p>
-            </a>
-            <a class="product" href="halo2.html">
-                    <img src="Components/product-photos/Halo-3.png">
-                <p>Halo 3 Complete in Original Case</p>
-                <p><b>$14.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/Halo-Reach.png">
-                <p>Halo Reach Complete in Original Case</p>
-                <p><b>$9.90</b></p>
-            </a>
-            <a class="product" href="halo2.html">
-                <img src="Components/product-photos/Halo-2.png">
-                <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
-                <p><b>$59.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/RDR.png">
-                <p>Red Dead Redemption Complete in Original Case</p>
-                <p><b>$16.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/Halo.png">
-                <p>Halo Complete in Original Case</p>
-                <p><b>$19.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/COD.png">
-                <p>Call of Duty Modern Warfare 2 Complete in Original Case</p>
-                <p><b>$19.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/GTA.png">
-                <p>Grand Theft Auto IV Complete in Original Case</p>
-                <p><b>$6.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/Forza.png">
-                <p>Forza Motorsport 3 Complete in Original Case</p>
-                <p><b>$14.90</b></p>
-            </a>
-            <a class="product" href="halo.html">
-                <img src="Components/product-photos/dead-or-alive-3.png">
-                <p>Dead or Alive 3 Complete in Original Case</p>
-                <p><b>$19.90</b></p>
-            </a>
-            
-        </section>
-        <section class="centered more-pages">
-                <a href="xbox.html">1</a>
-                <a href="xbox.html">2</a>
-                <a href="xbox.html">3</a>
-                <p class="breadcrumbs">&nbsp...&nbsp</p>
-                <a href="xbox.html">37</a>
-                <a href="xbox.html">&nbsp&nbsp></a>
+        
+        <section class="product-container">
+            <section class="image-container background-tile">
+                <img class = "item-image" src="Components/product-photos/Halo-2.png">
+            </section>
+
+            <aside class="product-info background-tile"> 
+                <h3 class="item-title">HALO 2 LIMITED STEELBOOK EDITION</h3>
+                <h3 class="item-price"><b>$59.90</b></h3>
+                <p><img src="Components/fire.svg">&nbsp 9 people have this in their cart</p>
+                
+                
+                <div class="outer">
+                    <div class="popup">
+                        <div class="popup-content">
+                            <a class="cross" id="closebtn">
+                                <img src="Components/Cross.svg" alt=" Close Popup">
+                            </a>
+                            <h3 class="light centered"><img src="Components/white-tick.svg" alt="White Tick">
+                                ADDED TO CART!
+                            </h3>
+                            <a href="xbox.html" class="continue-shopping">
+                                Continue Shopping
+                            </a>
+                            <a href="cart.html" class="view-cart"><img src="Components/Basket-dark.svg" alt="View Cart">
+                                View Cart
+                            </a>
+                    
+                        </div>
+                    </div>
+                <button class="btn-primary btn-add-to-cart" id="showbtn"><img src="Components/Basket.svg" alt="Add to Cart">
+                    Add to Cart
+                </button>
+                </div>
+                
+                <button class="increment">
+                    <span class="minus">-</span>
+                    <span class="number">1</span>
+                    <span class="plus">+</span>
+                </button>
+            </aside>
+            <aside class="background-tile product-info">
+                <h5>DETAILS</h5>
+                <p>Item will be sent as a letter with no tracking. If you require tracking, please select the registered post option.
+                    All products are cleaned and refurbished and are in excellent working order unless stated otherwise. 
+                    All products come with a 30 Day Replacement Warranty.
+                </p>
+            </aside>
+
+            <section class = "shipping-faq section-background-white section">
+                <details class="background-tile" closed> 
+                    <summary>Shipping</summary>
+                    <div class="dropdown-content">
+                        <p>Complimentary ground shipping within 1 to 7 business days (Excluding Trading Cards & Collectables)</p>
+                        <p>In-store collection available within 1 to 7 business days</p>
+                        <p>Next-day and Express delivery options also available</p>
+                        <p><b>Returns and Exchanges</b></p>
+                        <p>Easy and complimentary, within 14 days</p>
+                        <p>See conditions and procedure in our&nbsp<a href = ""> return FAQs</a></p>
+                    </div>
+                </details>
+                    
+                <details class="background-tile" closed> 
+                    <summary>FAQ</summary>
+                    <div class="dropdown-content">
+                        <p><b>Is every product sold from The Game Experts authentic and not fake?</b></p>                
+                        <p>We only deal directly with established manufacturers or distributors. You are welcome to perform your own assessment, and we confidently provide customers with a 30-day money-back guarantee.</p>
+                        <p><b>Do you deliver to other countries apart from Australia?</b></p>
+                        <p>At this point we only deliver products within Australia. However, we are actively looking for ways to expand our distribution.</p>
+                        <p><b>The product that I would like to purchase is out of stock. When can I expect it to be available again?</b></p>
+                        <p>It would usually depend on the product you intend to purchase. We recommend that you contact us and quote the product that you wish to purchase. </p>
+                    </div>
+                </details>
+            </section>
         </section>
     </main>
 
@@ -188,5 +196,8 @@
             <p>© 2024 The Game Experts</p>
         </div>
     </footer>
+
+    <script src="popup.js"></script> 
+    <script src="javascript.js"></script> 
 </body>
 </html>
