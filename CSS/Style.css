@@ -506,9 +506,9 @@ section.section-background {
     }
 
 
-    .item-title {
+    /* .item-title {
         font-size: 2em; /* smaller font to combat screen size */
-    }
+    } */
 
     .shipping-faq {
         grid-template-columns: 1fr;
