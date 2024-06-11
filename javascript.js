@@ -38,42 +38,54 @@ minus.addEventListener("click", ()=> {
 //   });
 // }
 
-//Logic for accordions
-let shipping = document.getElementById("shipping");
-let faq = document.getElementById("faq");
-let details = document.getElementById("details");
-shipping.addEventListener("click", () => {
-    shipping.classList.toggle("active");
-    let panel = document.getElementById("shipping-text");
-    panelLogic(panel);
-});
-faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
-    let panel = document.getElementById("faq-text");
-    panelLogic(panel);
-});
-details.addEventListener("click", () => {
-    details.classList.toggle("active");
-    let panel = document.getElementById("details-text");
-    panelLogic(panel);
-});
+// //Logic for accordions
+// let shipping = document.getElementById("shipping");
+// let faq = document.getElementById("faq");
+// let details = document.getElementById("details");
+// shipping.addEventListener("click", () => {
+//     shipping.classList.toggle("active");
+//     let panel = document.getElementById("shipping-text");
+//     panelLogic(panel);
+// });
+// faq.addEventListener("click", () => {
+//     faq.classList.toggle("active");
+//     let panel = document.getElementById("faq-text");
+//     panelLogic(panel);
+// });
+// details.addEventListener("click", () => {
+//     details.classList.toggle("active");
+//     let panel = document.getElementById("details-text");
+//     panelLogic(panel);
+// });
+// shipping.addEventListener("click", () => {
+//     shipping.classList.toggle("active");
+//     let panel = document.getElementById("shipping-text");
+//     panelLogic(panel);
+// });
 
-function panelLogic(panel) {
-    if (panel.style.display === "block") {
-        collapsePanel(panel);
-    } else {
-        collapseAllPanels();
-        expandPanel(panel);
-    }
-}
-function collapsePanel(panel) {
-    panel.style.display = "none";
-}
-function collapseAllPanels() {
-    collapsePanel(document.getElementById("details-text"));
-    collapsePanel(document.getElementById("shipping-text"));
-    collapsePanel(document.getElementById("faq-text"));
-}
-function expandPanel(panel) {
-    panel.style.display = "block";
-}
+// let orderSummary = document.getElementById('order-summary-header');
+// orderSummary.addEventListener("click", () => {
+//     orderSummary.classList.toggle("active");
+//     let panel = document.getElementById("order-summary-content");
+//     panelLogic(panel);
+// });
+
+// function panelLogic(panel) {
+//     if (panel.style.display === "block") {
+//         collapsePanel(panel);
+//     } else {
+//         // collapseAllPanels();
+//         expandPanel(panel);
+//     }
+// }
+// function collapsePanel(panel) {
+//     panel.style.display = "none";
+// }
+// function collapseAllPanels() {
+//     collapsePanel(document.getElementById("details-text"));
+//     collapsePanel(document.getElementById("shipping-text"));
+//     collapsePanel(document.getElementById("faq-text"));
+// }
+// function expandPanel(panel) {
+//     panel.style.display = "block";
+// }

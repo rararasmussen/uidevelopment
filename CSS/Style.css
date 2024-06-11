@@ -391,6 +391,7 @@ footer .container {
     justify-content: space-between;
     align-items: center;
     padding-right: 30px;
+    border: 1px var(--primary-blue);
 }
 
 .cart-image img {
@@ -580,8 +581,9 @@ section.section-background {
     text-align: left;
     gap: 24px;
     margin: 10px;
-    width: 40%;
+    width: auto;
     min-width: 300px;
+    max-width: 500px;
 }
 
 .centered {
@@ -593,7 +595,7 @@ section.section-background {
 
 
 #order-summary {
-    width: 40%;
+    width: auto;
     min-width: 300px;
 }
 

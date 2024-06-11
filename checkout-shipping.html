@@ -39,14 +39,31 @@
                     <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
                     <h5><b>$104.60</b></h5>
                 </div>
-                <div class="panel" id="order-summary-content">
-                    <!-- cart items go here in dropdown panel -->
+                <div id="order-summary-content">
+                    <article class="cart-item">
+                        <div class="cart-image">
+                            <img src="Components/product-photos/Halo-2.png">
+                        </div>
+                        <div class="details+price">
+                            <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
+                            <h4 class="cart-price">$59.91</h4>
+                        </div>
+                    </article>
+                    <article class="cart-item">
+                        <div class="cart-image">
+                            <img src="Components/product-photos/Halo-2.png">
+                        </div>
+                        <div class="details+price">
+                            <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
+                            <h4 class="cart-price">$59.91</h4>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <section class="column">
+            <form class="column" action="checkout-payment.html">
                 <div>
                     <h3>ADDRESS</h3>
-                    <input type="text" class="input-field" placeholder="Address search">
+                    <input type="text" class="input-field" placeholder="Address search" required>
                 </div>
                 <div>
                     <h3>SHIPPING METHOD</h3>
@@ -69,9 +86,9 @@
                     </div>
                 </div>
                 <div>
-                    <a href="checkout-payment.html"><button class="btn-primary">Continue to Payment ></button></a>
+                    <button type="submit" class="btn-primary">Continue to Payment ></button>
                 </div>
-            </section>
+            </form>
         </section>
     </main>
     <footer></footer>

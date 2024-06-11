@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
-    <script defer src="forms.js"></script>
-    <script src="javascript.js"></script>
-    <script src="store.js"></script>
 </head>
 
 <body>
@@ -43,8 +40,25 @@
                     <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
                     <h5><b>$104.60</b></h5>
                 </div>
-                <div class="panel" id="order-summary-content">
-                    
+                <div id="order-summary-content">
+                    <article class="cart-item">
+                        <div class="cart-image">
+                            <img src="Components/product-photos/Halo-2.png">
+                        </div>
+                        <div class="details+price">
+                            <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
+                            <h4 class="cart-price">$59.91</h4>
+                        </div>
+                    </article>
+                    <article class="cart-item">
+                        <div class="cart-image">
+                            <img src="Components/product-photos/Halo-2.png">
+                        </div>
+                        <div class="details+price">
+                            <p>Halo 2 Limited Steelbook Edition Complete in Original Case</p>
+                            <h4 class="cart-price">$59.91</h4>
+                        </div>
+                    </article>
                 </div>
             </div>
             <section class="column">
@@ -54,26 +68,14 @@
                     <img src="Components/icon-paypal.svg">
                     <img src="Components/icon-googleplay.svg">
                 </div>
+                
                 <div>
-                    <form id="form" action="checkout-shipping.html" id="details-form">
+                    <form id="form" action="checkout-shipping.html">
                         <h3>CONTACT DETAILS</h3>
-
-                        <div class="input-control">
-                            <input id="first-name" name="first-name" type="text" class="input-field" placeholder="First name" required>
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <input id="last-name" name="last-name" type="text" class="input-field" placeholder="Last name" required>
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <input id="email" name="email" type="text" class="input-field" placeholder="Email" required>
-                            <div class="error"></div>
-                        </div>
-                        <div class="input-control">
-                            <input id="phone" name="phone" type="text" class="input-field" placeholder="Phone" required>
-                            <div class="error"></div>
-                        </div>
+                        <input id="first-name" name="first-name" type="text" class="input-field" placeholder="First name" required>
+                        <input id="last-name" name="last-name" type="text" class="input-field" placeholder="Last name" required>
+                        <input id="email" name="email" type="text" class="input-field" placeholder="Email" required>
+                        <input id="phone" name="phone" type="text" class="input-field" placeholder="Phone" required>
                         <button type = "submit" class="btn-primary">Continue to Shipping ></button>
                     </form>
                 </div>

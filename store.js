@@ -10,6 +10,12 @@ function ready() {
         var button = removeCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
+
+    // Post code shipping validation
+    document.getElementById('shipping-form').addEventListener('submit', calculateShipping);
+
+    // Coupon code form validation
+    document.getElementById('coupon-form').addEventListener('submit', applyCoupon);
 }
 
 function removeCartItem(event) {
@@ -59,3 +65,53 @@ for(var i = 0; i < minusButtons.length; i++) {
     })
 }
 */
+
+function applyCoupon(event) {
+    event.preventDefault();
+    // get the entered coupon code
+    const couponCode = document.getElementById('coupon-input').value;
+
+    // display the message
+    const messageElement = document.getElementById('coupon-message');
+    messageElement.textContent = `Coupon code "${couponCode}" applied`;
+}
+
+function calculateShipping(event) {
+    // prevent default form submission
+    event.preventDefault();
+    
+    // get the entered coupon code
+    const postCode = document.getElementById('shipping-input').value;
+    
+    // display the message
+    const messageElement = document.getElementById('shipping-message');
+    messageElement.textContent = `Shipping to ${postCode} is $5.00`;
+}
+
+// Coupon code form validation
+document.getElementById('coupon-form').addEventListener('submit', applyCoupon);
+
+function applyCoupon(event) {
+    event.preventDefault();
+    // get the entered coupon code
+    const couponCode = document.getElementById('coupon-input').value;
+
+    // display the message
+    const messageElement = document.getElementById('coupon-message');
+    messageElement.textContent = `Coupon code "${couponCode}" applied`;
+}
+
+// Post code shipping validation
+document.getElementById('shipping-form').addEventListener('submit', calculateShipping);
+
+function calculateShipping(event) {
+    // prevent default form submission
+    event.preventDefault();
+    
+    // get the entered coupon code
+    const postCode = document.getElementById('shipping-input').value;
+    
+    // display the message
+    const messageElement = document.getElementById('shipping-message');
+    messageElement.textContent = `Shipping to ${postCode} is $5.00`;
+}
