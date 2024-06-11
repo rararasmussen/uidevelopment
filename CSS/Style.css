@@ -482,6 +482,22 @@ section.section-background {
     margin-bottom: 32px;
 }
 
+
+/* hamburger menu for mobile */
+.hamburger {
+    display: none;
+    font-size: 0;
+}
+
+.search-icon {
+    display: none !important;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background: transparent;
+    width: 40px;
+}
+
 /* responsivness of screen width */
 @media (max-width: 800px) {
 
@@ -506,9 +522,6 @@ section.section-background {
     }
 
 
-    /* .item-title {
-        font-size: 2em; /* smaller font to combat screen size */
-    } */
 
     .shipping-faq {
         grid-template-columns: 1fr;
@@ -524,7 +537,7 @@ section.section-background {
     }
 
     .hamburger {
-        display: block !important; /* force block to appear */
+        display: block; /* force block to appear */
         position: relative;
     }
 
@@ -545,7 +558,7 @@ section.section-background {
     }
 
     .search-icon {
-        display: block !important;
+        display: block;
     }
 
     .empty-footer {
@@ -768,20 +781,6 @@ main.no-margin {
     align-items: center;
 }
 
-/* hamburger menu for mobile */
-.hamburger {
-    display: none;
-    font-size: 0;
-}
-
-.search-icon {
-    display: none;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    background: transparent;
-    width: 40px;
-}
 
 /* Section for Mobile Search */
 .exit-search {
