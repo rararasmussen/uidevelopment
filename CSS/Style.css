@@ -760,3 +760,57 @@ main.no-margin {
     width: 40px;
 }
 
+/* Section for Mobile Search */
+.exit-search {
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-bottom: 80%;
+}
+.quick-links p {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    text-decoration: underline;
+}
+
+.quick-links-container {
+    padding: 30px;
+}
+
+.search-container-mobile {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 4px 8px;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    border-color: var(--primary-blue);
+    border-width: 2px;
+    border-style: solid;
+
+    
+}
+
+.search.wrapper a {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+h3.centered {
+    padding-bottom: 5%;
+}

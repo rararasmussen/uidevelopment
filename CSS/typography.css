@@ -134,3 +134,7 @@ footer p {
 .cross {
     text-decoration: none;
 }
+
+.smaller-h2 {
+    font-size: 3rem;
+}

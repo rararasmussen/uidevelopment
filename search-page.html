@@ -2,33 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
+    <link rel = "stylesheet" href = "CSS/reset.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Game Experts</title>
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
-    <link rel = "stylesheet" href = "CSS/reset.css">
-
 </head>
-<body class="search-background">
+<body>
     <header class="exit-search">
-        <a class="cross" href="index.html">
-            <img src="Components/Cross.svg" alt=" Close Popup">
-        </a>
+        <section class="exit-search">
+            <a class="cross" href="index.html">
+                <img src="Components/cross-purple.svg" alt=" Close Popup">
+            </a>
+        </section>
     </header>
 
     <main>
-        <h2>Search</h2>
-        <a><form id="search-form" class="search-container" action="xbox.html">
-            <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
-            <input type="text" class="search-field" placeholder="Search...">
-        </form></a>
-        <h3>Quick Links</h3>
-        <h4>New Arrivals</h4>
-        <h4>FAQ</h4>
-        <h4>Trade & Save</h4>
-        <h4>Contact</h4>
+        <h3 class="centered">SEARCH</h3>
+        <div class="search-wrapper">
+            <a><form class="search-container-mobile" action="xbox.html">
+                    <button type="submit" class="btn-icon"><img src = "Components/search-icon.svg"></button>
+                    <input type="text" class="search-field" placeholder="Search...">
+            </form></a>
+            
+        </div>
+        <section class="quick-links-container">
+            <section class="quick-links">
+                <h5>Quick Links</h5>
+                <a href="xbox.html"><p>New Arrivals</p></a>
+                <a href="xbox.html"><p>FAQ</p></a>
+                <a href="xbox.html"><p>Trade & Save</p></a>
+                <a href="xbox.html"><p>Contact</p></a>
+            </section>
+        </section>
+        
+        
     </main>
 </body>
 </html>
