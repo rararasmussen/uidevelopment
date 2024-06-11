@@ -551,6 +551,20 @@ section.section-background {
 }
 
 /* This is the section for checkout pages */
+.success input {
+    border-color: #09C372;
+}
+
+.error input {
+    border-color: #FF3860;
+}
+
+.input-control .error {
+    border-color: #FF3860;
+    font-size: 9px;
+    height: 13px;
+}
+
 .checkout-grid {
     display: flex;
     justify-content: center;

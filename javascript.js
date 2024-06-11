@@ -77,26 +77,3 @@ function collapseAllPanels() {
 function expandPanel(panel) {
     panel.style.display = "block";
 }
-
-document.getElementById('coupon-form').addEventListener('submit', function(event) {
-    console.log("Done");
-    // prevent default form submission
-    event.preventDefault();
-    
-    // get the entered coupon code
-    const couponCode = document.getElementById('coupon-input').value;
-    
-    // display the message
-    const messageElement = document.getElementById('coupon-message');
-    messageElement.textContent = `Coupon code ${couponCode} applied`;
-});
-
-function applyCoupon(event) {
-event.preventDefault();
-// get the entered coupon code
-const couponCode = document.getElementById('coupon-input').value;
-
-// display the message
-const messageElement = document.getElementById('coupon-message');
-messageElement.textContent = `Coupon code "${couponCode}" applied`;
-}

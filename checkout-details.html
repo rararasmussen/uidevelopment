@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akshar">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
-    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "Components/reset.css">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="CSS/colours.css">
     <link rel="stylesheet" href="CSS/typography.css">
     <link rel="stylesheet" href="CSS/buttons.css">
+    <script defer src="forms.js"></script>
+    <script src="javascript.js"></script>
+    <script src="store.js"></script>
 </head>
 
 <body>
@@ -41,7 +44,7 @@
                     <h5><b>$104.60</b></h5>
                 </div>
                 <div class="panel" id="order-summary-content">
-                    <!-- cart items go here in dropdown panel -->
+                    
                 </div>
             </div>
             <section class="column">
@@ -52,14 +55,27 @@
                     <img src="Components/icon-googleplay.svg">
                 </div>
                 <div>
-                    <h3>CONTACT DETAILS</h3>
-                    <input type="text" class="input-field" placeholder="First name">
-                    <input type="text" class="input-field" placeholder="Last name">
-                    <input type="text" class="input-field" placeholder="Email">
-                    <input type="text" class="input-field" placeholder="Phone">
-                </div>
-                <div>
-                    <a href="checkout-shipping.html"><button class="btn-primary">Continue to Shipping ></button></a>
+                    <form id="form" action="checkout-shipping.html" id="details-form">
+                        <h3>CONTACT DETAILS</h3>
+
+                        <div class="input-control">
+                            <input id="first-name" name="first-name" type="text" class="input-field" placeholder="First name" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input id="last-name" name="last-name" type="text" class="input-field" placeholder="Last name" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input id="email" name="email" type="text" class="input-field" placeholder="Email" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <input id="phone" name="phone" type="text" class="input-field" placeholder="Phone" required>
+                            <div class="error"></div>
+                        </div>
+                        <button type = "submit" class="btn-primary">Continue to Shipping ></button>
+                    </form>
                 </div>
             </section>
         </section>
