@@ -94,14 +94,16 @@ details {
 }
 
 .dropdown-content {
-    position: relative;
+    position: fixed;
     background: var(--background-light-gray);
     padding: 10px;
 
     border-radius: 10px;
-
 }
 
+.dropdown-content li {
+    padding: 10px;
+}
 
 .nav-button {
     text-decoration: none;
@@ -523,7 +525,16 @@ section.section-background {
 
     .hamburger {
         display: block !important; /* force block to appear */
+        position: relative;
     }
+
+    .dropdown-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 
     .popular-brands {
         display: none;
