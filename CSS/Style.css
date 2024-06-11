@@ -94,7 +94,7 @@ details {
 }
 
 .dropdown-content {
-    position: fixed;
+    position: relative;
     background: var(--background-light-gray);
     padding: 10px;
 
@@ -217,8 +217,7 @@ footer {
     gap: 24px;
     margin-top: 24px;
     border-style: solid;
-    border-width: 1px;;
-    
+    border-width: 1px;
     /* margin-top: auto; this pushes footer to the bottom */
 
 }
@@ -560,7 +559,18 @@ section.section-background {
     .centered {
         margin: 10px;
     }
+
+    .cart-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        width:fit-content;
+        gap: 10px
+    }
 }
+
+
+
 
 /* This is the section for checkout pages */
 .success input {
@@ -608,6 +618,20 @@ section.section-background {
 #order-summary {
     width: auto;
     min-width: 300px;
+}
+
+/* this is for the text in the order summary */
+.order-summary-text {
+    display: 
+}
+
+.order-summary-text h5 {
+    margin: 0;
+    display: inline;
+}
+
+.order-summary-text .price {
+    margin-left: 20px;
 }
 
 /* Table styles */
@@ -663,6 +687,7 @@ td {
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
+    position: relative;
 }
 
 
@@ -814,3 +839,4 @@ main.no-margin {
 h3.centered {
     padding-bottom: 5%;
 }
+
