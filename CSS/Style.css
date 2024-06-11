@@ -582,8 +582,8 @@ section.section-background {
     gap: 24px;
     margin: 10px;
     width: auto;
-    min-width: 300px;
-    max-width: 500px;
+    max-width: 50%;
+    min-width: 450px;
 }
 
 .centered {
