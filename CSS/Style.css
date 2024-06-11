@@ -537,9 +537,14 @@ section.section-background {
     }
 
     .hamburger {
-        display: block; /* force block to appear */
+        display: block !important; /* force block to appear */
         position: relative;
     }
+
+    .search-icon {
+        display: block !important;
+    }
+
 
     .dropdown-content {
         padding: 20px;
@@ -557,10 +562,7 @@ section.section-background {
         display: none;
     }
 
-    .search-icon {
-        display: block;
-    }
-
+    
     .empty-footer {
         width: 100%;
     }
