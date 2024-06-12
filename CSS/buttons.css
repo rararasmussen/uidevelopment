@@ -63,7 +63,6 @@ button img{
     margin-right: 8px;
 }
 
-/* remove this? where is it used */
 button.btn-full-width {
     width: 100%;
     justify-content: center;
@@ -80,6 +79,7 @@ button.btn-full-width {
     font-weight:bold;
 }
 
+/* SECTION FOR INCREMENTOR BUTTON    */
 .increment {
     border: 2px;
     border-style: solid;

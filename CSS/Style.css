@@ -86,7 +86,7 @@ main {
     box-shadow:0px 10px 10px 0px rgba(12, 7, 56, 0.2);
 }
 
-/* for Console Type dropdown ********/
+/* for dropdowns ********/
 details {
     padding-top: 20px;
 }
@@ -96,7 +96,7 @@ details {
 }
 
 .dropdown-content {
-    position: fixed;
+    position: relative;
     background: var(--background-light-gray);
     padding: 10px;
 
@@ -105,6 +105,10 @@ details {
 
 .dropdown-content li {
     padding: 10px;
+}
+
+.nav-container .dropdown-content {
+    position: fixed;
 }
 
 .nav-button {
