@@ -545,7 +545,6 @@ section.section-background {
         display: block !important;
     }
 
-
     .dropdown-content {
         padding: 20px;
         display: flex;
@@ -720,8 +719,8 @@ td {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(#5723CF, #AF436D);
-    width: 400px;
-    height: 300px;
+    width: 40vw;
+    height: 35vh;
     border-radius: 10px;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
@@ -729,7 +728,7 @@ td {
     padding: 20px;
     display: none; /* Initllay hidden */
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
 
 .popup-content {
