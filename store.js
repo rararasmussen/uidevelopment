@@ -1,9 +1,11 @@
+/* Wait until everything is done loading to perform any actions */
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
 }
 
+/* Add event listeners */
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName("btn-remove");
     for(var i = 0; i < removeCartItemButtons.length; i++) {
@@ -11,13 +13,13 @@ function ready() {
         button.addEventListener('click', removeCartItem);
     }
 
-    // Post code shipping validation
+    /* Post code shipping validation ***************************************************************/
     document.getElementById('shipping-form').addEventListener('submit', calculateShipping);
 
-    // Coupon code form validation
+    /* Coupon code form validation ***************************************************************/
     document.getElementById('coupon-form').addEventListener('submit', applyCoupon);
 
-    // This script is for the incremental-wrapper //
+    /* Incrementor button ************************************************************************/
     const plus = document.querySelector(".plus"),
     minus = document.querySelector(".minus"),
     number = document.querySelector(".number");
@@ -28,7 +30,6 @@ function ready() {
         a++;
         number.innerText = a;
     })
-
     minus.addEventListener("click", ()=> {
         if(a>1){
         a--;
@@ -38,12 +39,14 @@ function ready() {
 })
 }
 
+/* Removes an item from the cart */
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     updateCartTotal();
 }
 
+/* Updates the cart total when an item is removed */
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('shopping-cart')[0];
     var cartItems = cartItemContainer.getElementsByClassName('cart-item');
@@ -60,32 +63,7 @@ function updateCartTotal() {
     document.getElementById('total-price').innerText = "TOTAL: $" + total;
 }
 
-/* Potential new code for incrementer button - 
-Commented out because it doesn't work yet
-// This script is for the incremental-wrapper //
-var plusButtons = document.getElementsByClassName('plus');
-var minusButtons = document.getElementsByClassName('minus');
-var numberButtons = document.getElementsByClassName('number');
-for(var i = 0; i < plusButtons.length; i++) {
-    var plus = plusButtons[i];
-    plus.addEventListener("click", ()=> {
-        var number = numberButtons[i];
-        number.innerText = parseInt(number.innerText)++;
-        updateCartTotal();
-    })
-}
-for(var i = 0; i < minusButtons.length; i++) {
-    var minus = minusButtons[i];
-    plus.addEventListener("click", ()=> {
-        if(a > 1) {
-            var number = numberButtons[i];
-            number.innerText = parseInt(number.innerText)--;
-            updateCartTotal();
-        }
-    })
-}
-*/
-
+/* Validate the coupon code form */
 function applyCoupon(event) {
     event.preventDefault();
     // get the entered coupon code
@@ -96,34 +74,7 @@ function applyCoupon(event) {
     messageElement.textContent = `Coupon code "${couponCode}" applied`;
 }
 
-function calculateShipping(event) {
-    // prevent default form submission
-    event.preventDefault();
-    
-    // get the entered coupon code
-    const postCode = document.getElementById('shipping-input').value;
-    
-    // display the message
-    const messageElement = document.getElementById('shipping-message');
-    messageElement.textContent = `Shipping to ${postCode} is $5.00`;
-}
-
-// Coupon code form validation
-document.getElementById('coupon-form').addEventListener('submit', applyCoupon);
-
-function applyCoupon(event) {
-    event.preventDefault();
-    // get the entered coupon code
-    const couponCode = document.getElementById('coupon-input').value;
-
-    // display the message
-    const messageElement = document.getElementById('coupon-message');
-    messageElement.textContent = `Coupon code "${couponCode}" applied`;
-}
-
-// Post code shipping validation
-document.getElementById('shipping-form').addEventListener('submit', calculateShipping);
-
+/* Validate the calculate shipping form */
 function calculateShipping(event) {
     // prevent default form submission
     event.preventDefault();

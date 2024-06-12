@@ -32,6 +32,13 @@ button.btn-important {
     width: 100%;
 }
 
+.btn-gray {
+    background-color: var(--background-light-gray);
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 10px;
+}
+
 button.btn-text {
     color: var(--primary-blue);
     text-decoration: underline;
@@ -79,7 +86,7 @@ button.btn-full-width {
     font-weight:bold;
 }
 
-/* SECTION FOR INCREMENTOR BUTTON    */
+/* SECTION FOR INCREMENTOR BUTTON ******************************************************************************/
 .increment {
     border: 2px;
     border-style: solid;
@@ -126,6 +133,7 @@ button.btn-full-width {
     flex-shrink: 0
 }
 
+/* STYLES FOR SEARCH BUTTON *************************************************************************************/
 .btn-icon{
     padding: 0px;
     margin: 0px;
@@ -134,18 +142,13 @@ button.btn-full-width {
     border-radius:0px;
     background-color: transparent;
 }
+
 button[type="submit"] img{
     height: 24px;
     width: 24px;
 }
 
-.btn-gray {
-    background-color: var(--background-light-gray);
-    object-fit: cover;
-    padding: 8px;
-    border-radius: 10px;
-}
-
+/* BUTTONS FOR ADDED TO CART POPUP *****************************************************************************/
 .continue-shopping {
     font-family: var(--font-body);
     font-size: 18px;
