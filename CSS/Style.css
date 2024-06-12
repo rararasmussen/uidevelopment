@@ -523,7 +523,8 @@ section.section-background {
 
     .popup {
         width: calc(100%-20px); /* space between popup and edge of screen */
-        max-width: 300px; 
+        max-width: 280px; 
+    }
 
     .shipping-faq {
         grid-template-columns: 1fr;
