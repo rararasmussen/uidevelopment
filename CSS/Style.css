@@ -521,7 +521,9 @@ section.section-background {
         justify-content: center;
     }
 
-
+    .popup {
+        width: calc(100%-20px); /* space between popup and edge of screen */
+        max-width: 300px; 
 
     .shipping-faq {
         grid-template-columns: 1fr;
@@ -719,8 +721,8 @@ td {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(#5723CF, #AF436D);
-    width: 40vw;
-    height: 35vh;
+    width: 380px;
+    height: 300px;
     border-radius: 10px;
     transition: all 0.5s ease;
     transition-duration: 0.5s;
