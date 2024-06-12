@@ -24,7 +24,7 @@
             <nav class="top-nav cart-nav">
                 <a href="cart.html" class = "light">< Back to Cart</a>
                 <a href="index.html" class="logo">
-                    <img src="Components/Logo.svg" alt="The Game Expert Logo"> 
+                    <img src="Components/Logo.svg" alt="The Game Expert Logo" class="cart-logo"> 
                 </a>
             </nav>
         </div>
@@ -36,28 +36,34 @@
         <section class="checkout-grid">
             <div class="background-tile gray" id="order-summary">
                 <div class="order-summary-header"> 
-                    <h5>ORDER SUMMARY <img src="Components/icon-chevron.svg"></h5> 
-                    <h5><b>$69.80</b></h5>
-                </div>
-                <div id="order-summary-content">
-                    <article class="cart-item">
-                        <div class="cart-image">
-                            <img src="Components/product-photos/Halo-3-ODST.png">
+                    <details closed> 
+                        <summary class="order-summary-text">
+                            ORDER SUMMARY
+                            <h5 class="price"><b>$69.80</b></h5>
+                        </summary>
+                        <div class="dropdown-content">
+                            <div id="order-summary-content">
+                                <article class="cart-item">
+                                    <div class="cart-image">
+                                        <img src="Components/product-photos/Halo-3-ODST.png">
+                                    </div>
+                                    <div class="details+price">
+                                        <p>Halo 3 ODST Complete in Original Case &nbsp&nbsp&nbsp&nbsp</p>
+                                        <h4 class="cart-price">$9.90</h4>
+                                    </div>
+                                </article>
+                                <article class="cart-item">
+                                    <div class="cart-image">
+                                        <img src="Components/product-photos/Halo-2.png">
+                                    </div>
+                                    <div class="details+price">
+                                        <p>Halo 2 Limited Steelbook Edition Complete</p>
+                                        <h4 class="cart-price">$59.90</h4>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                        <div class="details+price">
-                            <p>Halo 3 ODST Complete in Original Case &nbsp&nbsp&nbsp&nbsp</p>
-                            <h4 class="cart-price">$9.90</h4>
-                        </div>
-                    </article>
-                    <article class="cart-item">
-                        <div class="cart-image">
-                            <img src="Components/product-photos/Halo-2.png">
-                        </div>
-                        <div class="details+price">
-                            <p>Halo 2 Limited Steelbook Edition Complete</p>
-                            <h4 class="cart-price">$59.90</h4>
-                        </div>
-                    </article>
+                    </details>
                 </div>
             </div>
             <form class="column" action="checkout-payment.html">
